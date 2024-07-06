@@ -1,0 +1,20 @@
+.card {
+    width: 380px;
+    height: 78px;
+    border-radius: 5px;
+    border: 0.5px solid #00071C;
+    background: #F0F0F0;
+    box-shadow: 5px 5px #FF7219;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0px 18px 0px 18px;
+    margin-top: 20px;
+}
+
+.card > p{
+    font-size: 18px !important;
+    font-weight: 700 !important;
+    position: relative;
+    top: -2.25px;
+}

@@ -1,0 +1,60 @@
+.container { 
+    width: 100%; 
+    display: flex; 
+    flex-direction: column; 
+    justify-content: start; 
+    align-items: center; 
+    font-family: Arial; 
+    margin-top: 150px;
+} 
+ 
+.firstContainer { 
+   width: 77%; 
+   height: 30vh; 
+   display: flex; 
+   justify-content: start; 
+   flex-direction: column; 
+   align-items: center; 
+} 
+ 
+.firstContainer h1 { 
+   font-size: 64px; 
+   color: #00071C; 
+   line-height: 20px; 
+   font-weight: 400; 
+   text-shadow: 1px 5px 4px rgb(170, 168, 168); 
+} 
+ 
+ 
+.firstContainer h2 { 
+  text-transform: uppercase; 
+  background: linear-gradient(to right, #0132C6 ,#9747FF, #FA550C); 
+  background-size: 400% 400%; 
+  -webkit-background-clip: text; 
+  -webkit-text-fill-color: transparent; 
+  -webkit-animation: rainbow 20s ease infinite; 
+  animation: rainbow 3s ease infinite; 
+  font-size: 64px; 
+  line-height: 115px; 
+} 
+  
+@-webkit-keyframes rainbow { 
+  0% { background-position: 0% 50% } 
+  50% { background-position: 100% 50% } 
+  100% { background-position: 0% 50% } 
+} 
+  
+@keyframes rainbow { 
+  0% { background-position: 0% 50% } 
+  50% { background-position: 100% 50% } 
+  100% { background-position: 0% 50% } 
+} 
+ 
+.studentContainer { 
+   width: 80%; 
+   display: flex; 
+   flex-wrap: wrap; 
+   justify-content: center; 
+   align-items: center; 
+   gap: 20px; 
+} 

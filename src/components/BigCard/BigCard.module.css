@@ -1,0 +1,66 @@
+
+.cardContainer {
+    width: 80%;
+    height: 630px;
+    margin: auto;
+    margin-top: 150px;
+    position: relative;
+}
+
+.blackBackground {
+    width: 100%;
+    height: 100%;
+    background: #00071C;
+    border-radius: 10px;
+    transform: rotateZ(-2.14deg);
+    position: absolute;
+    z-index: -1;
+}
+
+.bigCard {
+    width: 100%;
+    height: 100%;
+    background: #F0F0F0;
+    border-radius: 10px;
+    border: 1px solid #00071C;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 30px;
+}
+
+.bigCard .title {
+    font-size: 38px;
+    line-height: 50px;
+    text-transform: uppercase;
+    color: #00071C;
+}
+
+.bigCard>.description {
+    width: 60%;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 18px;
+    text-align: center;
+    margin-top: -50px;
+    color: #00071C;
+}
+
+.cards {
+    width: 70%;
+    height: 160px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.bigCard button {
+    width: 246px;
+    height: 32px;
+    border-radius: 30px;
+    border: 1px solid #012BAA;
+    font-size: 12px;
+    font-weight: 700;
+    color: #012BAA;
+}

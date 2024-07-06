@@ -1,0 +1,52 @@
+.container {
+    width: 100%;
+    position: relative;
+}
+
+.input {
+    width: 100%;
+    height: 64px;
+    padding: 10px 20px 10px 20px;
+    border-radius: 10px;
+    background-color: #f0f0f05a;
+    color: white;
+    border: 1px;
+    font-size: 18px;
+    outline: none;
+}
+
+.input:hover {
+    border: solid 1px #F6F6F6;
+    background: transparent
+}
+.input:focus{
+    border: solid 1px #F6F6F6;
+    background: transparent;
+}
+.input:hover~.floatingLabel {
+    color: #F6F6F6;
+    background: #000E39;
+}
+input:focus ~ .floatingLabel,
+.input:not(:focus):valid ~ .floatingLabel{
+    top: -15px;
+    color: #F6F6F6;
+    background: #000E39;
+    padding: 0px 10px 0px 10px;
+}
+.input:not(:focus):valid{
+    background: transparent;
+    border: solid 1px #F6F6F6;
+}
+
+.floatingLabel {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 22px;
+    color: #00071C;
+    position: absolute;
+    pointer-events: none;
+    top: 21px;
+    left: 20px;
+    transition: all 0.1s ease;
+}
