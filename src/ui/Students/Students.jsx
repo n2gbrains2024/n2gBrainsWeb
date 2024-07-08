@@ -17,7 +17,11 @@ function Students() {
         <section className={styles.container}>
             <div className={styles.firstContainer}>
                 <h1>Դարձիր մեր լավագույն</h1>
-                <h2>Ուսանողը</h2>
+                <div className={styles.slider}>
+                    <h2 className={styles.face1}>ՈՒՍԱՆՈՂԸ</h2>
+                    <h2 className={styles.face2}>ԱՇԽԱՏԱԿԻՑԸ</h2>
+                    <h2 className={styles.face3}>ԳՈՐԾԸՆԿԵՐԸ</h2>
+                </div>
             </div>
             <div className={styles.studentContainer}>
                 {students.map((student, index) => {

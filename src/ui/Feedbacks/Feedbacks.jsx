@@ -14,7 +14,7 @@ function Feedbacks(){
     ]
     return (
         <div className={styles.container}>
-                <ScrollAnimation animateIn='fadeInRight' animateOut='fadeOut'>
+                <ScrollAnimation animateIn='fadeInRight' animateOut='fadeOut' animateOnce="true">
                     <h1>Կարծիքներ մեր մասին</h1>
                 </ScrollAnimation>
                 <p>Մեր աշակերտների գոհ և շնորհակալ կարծիքները լավագույն գնահատականն են մեզ համար։</p>
