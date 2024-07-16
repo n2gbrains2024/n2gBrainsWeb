@@ -1,9 +1,57 @@
-.container{
-    width: 35%;
-    height: 246px;
-    background: #F0F0F0;
-    border: solid 1px #00071C;
-    border-radius: 20px;
-    margin-top: 50px;
-    box-shadow: 8px 8px #FF7219;
+.container {
+  width: 500px;
+  height: 246px;
+  background: #f0f0f0;
+  border: solid 1px #00071c;
+  border-radius: 10px;
+  box-shadow: 5px 3px #ff7219;
+  color: #00071c;
+}
+.container p {
+  width: 95%;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 18px;
+  text-align: left;
+  margin-top: -10px;
+}
+.container > div {
+  padding-left: 50px;
+}
+.container h2 {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+  text-align: left;
+}
+.container h3 {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 19px;
+  text-align: left;
+}
+.userImage {
+  width: 56px;
+  height: 56px;
+  border: solid 1px;
+  border-radius: 100%;
+}
+.userInfo {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+}
+.userInfo > div {
+  margin-left: 10px;
+}
+.topMarks {
+  transform: rotateZ(180deg);
+  position: relative;
+  top: -25px;
+  left: -180px;
+}
+.bottomMarks {
+  position: relative;
+  top: -10px;
+  left: 180px;
 }

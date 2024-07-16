@@ -6,11 +6,11 @@ import "animate.css/animate.compat.css"
 
 function CourseCard() {
     return (
-        <ScrollAnimation animateIn="zoomIn" animateOut="fadeOut" className={styles.courseContainer}>
+        <ScrollAnimation animateIn="zoomIn" animateOut="fadeOut" className={styles.courseContainer} animateOnce="true">
             <div>
                 <h1>Առաջիկա դասընթացներ</h1>
                 <div className={styles.courseCard}>
-                    <ScrollAnimation animateIn="bounceInUp"  className={styles.courseInfo}>
+                    <ScrollAnimation animateIn="bounceInUp"  className={styles.courseInfo} animateOnce="true">
                         <span>Online</span>
                         <div>
                             <h2>Ծրագրավորում</h2>
@@ -23,7 +23,7 @@ function CourseCard() {
                         </div>
                         <button>Ավելին</button>
                     </ScrollAnimation>
-                    <ScrollAnimation animateIn="bounceIn" animateOut="bounceOut">
+                    <ScrollAnimation animateIn="bounceIn" animateOut="bounceOut" animateOnce="true">
                     <img src={narekImage} alt="" className={styles.narek} />
                     </ScrollAnimation>
                 </div>

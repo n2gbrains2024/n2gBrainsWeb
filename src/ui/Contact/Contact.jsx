@@ -8,7 +8,7 @@ function Contact(){
       <div className={contactStyles.data}> 
         <h2>Ստացիր <span>անվճար</span> խորհրդատվություն</h2> 
         <form className={contactStyles.form}> 
-          <InputComponent placeholder='Անուն, Ազգանուն'/>
+          <InputComponent placeholder='Անուն Ազգանուն'/>
           <InputComponent placeholder='Հեռախոսահամար'/>
           <InputComponent placeholder='Էլ․ հասցե'/>
           <button>Ուղարկել</button> 

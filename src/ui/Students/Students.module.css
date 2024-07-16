@@ -1,60 +1,224 @@
-.container { 
-    width: 100%; 
-    display: flex; 
-    flex-direction: column; 
-    justify-content: start; 
-    align-items: center; 
-    font-family: Arial; 
-    margin-top: 150px;
-} 
- 
-.firstContainer { 
-   width: 77%; 
-   height: 30vh; 
-   display: flex; 
-   justify-content: start; 
-   flex-direction: column; 
-   align-items: center; 
-} 
- 
-.firstContainer h1 { 
-   font-size: 64px; 
-   color: #00071C; 
-   line-height: 20px; 
-   font-weight: 400; 
-   text-shadow: 1px 5px 4px rgb(170, 168, 168); 
-} 
- 
- 
-.firstContainer h2 { 
-  text-transform: uppercase; 
-  background: linear-gradient(to right, #0132C6 ,#9747FF, #FA550C); 
-  background-size: 400% 400%; 
-  -webkit-background-clip: text; 
-  -webkit-text-fill-color: transparent; 
-  -webkit-animation: rainbow 20s ease infinite; 
-  animation: rainbow 3s ease infinite; 
-  font-size: 64px; 
-  line-height: 115px; 
-} 
-  
-@-webkit-keyframes rainbow { 
-  0% { background-position: 0% 50% } 
-  50% { background-position: 100% 50% } 
-  100% { background-position: 0% 50% } 
-} 
-  
-@keyframes rainbow { 
-  0% { background-position: 0% 50% } 
-  50% { background-position: 100% 50% } 
-  100% { background-position: 0% 50% } 
-} 
- 
-.studentContainer { 
-   width: 80%; 
-   display: flex; 
-   flex-wrap: wrap; 
-   justify-content: center; 
-   align-items: center; 
-   gap: 20px; 
-} 
+.container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 150px;
+}
+
+.firstContainer {
+  width: 77%;
+  height: 30vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.firstContainer h1 {
+  font-size: 64px;
+  color: #00071c;
+  line-height: 20px;
+  font-weight: 400;
+  text-shadow: 1px 5px 4px rgb(170, 168, 168);
+}
+
+.slider {
+  margin-top: 50px;
+  position: relative;
+  -webkit-animation-name: spincube;
+  -webkit-animation-timing-function: ease-in-out;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-duration: 8s;
+  animation-name: spincube;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  animation-duration: 8s;
+  -webkit-transform-style: preserve-3d;
+  -moz-transform-style: preserve-3d;
+  -ms-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+  -webkit-transform-origin: 40px 40px 0;
+  -moz-transform-origin: 40px 40px 0;
+  -ms-transform-origin: 40px 40px 0;
+  transform-origin: 40px 40px 0;
+}
+
+.slider h2 {
+  width: 100vw;
+  margin-left: -50vw;
+  text-align: center;
+  background: #0132c6;
+  -webkit-background-clip: text;
+  -webkit-text-stroke: 5px transparent;
+  -webkit-text-fill-color: transparent;
+  position: absolute;
+  font-size: 64px;
+  letter-spacing: 5px;
+  line-height: 100px;
+}
+
+.slider .face1 {
+  background: #0132c6;
+  -webkit-background-clip: text;
+  -webkit-text-stroke: 5px transparent;
+  -webkit-text-fill-color: transparent;
+  -webkit-transform: translateZ(40px);
+  -moz-transform: translateZ(40px);
+  -ms-transform: translateZ(40px);
+  transform: translateZ(40px);
+  -webkit-backface-visibility: hidden;
+}
+
+.slider .face2 {
+  background: lime;
+  -webkit-background-clip: text;
+  -webkit-text-stroke: 5px transparent;
+  -webkit-text-fill-color: transparent;
+  -webkit-transform: rotateX(90deg) translateZ(40px);
+  -moz-transform: rotateX(90deg) translateZ(40px);
+  -ms-transform: rotateX(90deg) translateZ(40px);
+  transform: rotateX(90deg) translateZ(40px);
+  -webkit-backface-visibility: hidden;
+}
+
+.slider .face3 {
+  background: #f85555;
+  -webkit-background-clip: text;
+  -webkit-text-stroke: 5px transparent;
+  -webkit-text-fill-color: transparent;
+  -webkit-transform: rotateX(180deg) translateZ(40px);
+  -moz-transform: rotateX(180deg) translateZ(40px);
+  -ms-transform: rotateX(180deg) translateZ(40px);
+  transform: rotateX(180deg) translateZ(40px);
+  -webkit-backface-visibility: hidden;
+}
+
+/*Cubical Flipping or rotation*/
+@-webkit-keyframes spincube {
+  from,
+  to {
+    -webkit-transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg);
+  }
+
+  15% {
+    -webkit-transform: rotateX(90deg);
+  }
+
+  25% {
+    -webkit-transform: rotateX(90deg);
+  }
+
+  40% {
+    -webkit-transform: rotateX(180deg);
+  }
+
+  50% {
+    -webkit-transform: rotateX(180deg);
+  }
+
+  65% {
+    -webkit-transform: rotateX(270deg);
+  }
+
+  75% {
+    -webkit-transform: rotateX(270deg);
+  }
+
+  95% {
+    -webkit-transform: rotateX(360deg);
+  }
+
+  100% {
+    -webkit-transform: rotateX(360deg);
+  }
+}
+
+@keyframes spincube {
+  from,
+  to {
+    -webkit-transform: rotateX(0deg);
+    -moz-transform: rotateX(0deg);
+    -ms-transform: rotateX(0deg);
+    transform: rotateX(0deg);
+  }
+
+  15% {
+    -webkit-transform: rotateX(90deg);
+    -moz-transform: rotateX(90deg);
+    -ms-transform: rotateX(90deg);
+    transform: rotateX(90deg);
+  }
+
+  25% {
+    -webkit-transform: rotateX(90deg);
+    -moz-transform: rotateX(90deg);
+    -ms-transform: rotateX(90deg);
+    transform: rotateX(90deg);
+  }
+
+  40% {
+    -webkit-transform: rotateX(180deg);
+    -moz-transform: rotateX(180deg);
+    -ms-transform: rotateX(180deg);
+    transform: rotateX(180deg);
+  }
+
+  50% {
+    -webkit-transform: rotateX(180deg);
+    -moz-transform: rotateX(180deg);
+    -ms-transform: rotateX(180deg);
+    transform: rotateX(180deg);
+  }
+
+  65% {
+    -webkit-transform: rotateX(270deg);
+    -moz-transform: rotateX(270deg);
+    -ms-transform: rotateX(270deg);
+    transform: rotateX(270deg);
+  }
+
+  75% {
+    -webkit-transform: rotateX(270deg);
+    -moz-transform: rotateX(270deg);
+    -ms-transform: rotateX(270deg);
+    transform: rotateX(270deg);
+  }
+
+  90% {
+    -webkit-transform: rotateX(360deg);
+    -moz-transform: rotateX(360deg);
+    -ms-transform: rotateX(360deg);
+    transform: rotateX(360deg);
+  }
+
+  100% {
+    -webkit-transform: rotateX(360deg);
+    -moz-transform: rotateX(360deg);
+    -ms-transform: rotateX(360deg);
+    transform: rotateX(360deg);
+  }
+}
+
+.studentContainer {
+  width: 80%;
+  min-height: 80vh;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+
+.studentContainer > img {
+  width: 278px;
+  height: 320px;
+}
+
+.studentContainer > :nth-child(1) {
+  margin-top: 0px !important;
+}
+
+.studentContainer:hover > img {
+  margin-left: 0 !important;
+  margin-top: 0 !important;
+}
