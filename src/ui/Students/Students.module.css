@@ -16,7 +16,7 @@
 
 .firstContainer h1 {
   font-size: 64px;
-  color: #00071C;
+  color: #00071c;
   line-height: 20px;
   font-weight: 400;
   text-shadow: 1px 5px 4px rgb(170, 168, 168);
@@ -47,7 +47,7 @@
   width: 100vw;
   margin-left: -50vw;
   text-align: center;
-  background: #0132C6;
+  background: #0132c6;
   -webkit-background-clip: text;
   -webkit-text-stroke: 5px transparent;
   -webkit-text-fill-color: transparent;
@@ -57,18 +57,8 @@
   line-height: 100px;
 }
 
-.studentContainer {
-  width: 80%;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  gap: 20px;
-}
-
-
 .slider .face1 {
-  background: #0132C6;
+  background: #0132c6;
   -webkit-background-clip: text;
   -webkit-text-stroke: 5px transparent;
   -webkit-text-fill-color: transparent;
@@ -105,7 +95,6 @@
 
 /*Cubical Flipping or rotation*/
 @-webkit-keyframes spincube {
-
   from,
   to {
     -webkit-transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg);
@@ -145,7 +134,6 @@
 }
 
 @keyframes spincube {
-
   from,
   to {
     -webkit-transform: rotateX(0deg);
@@ -209,4 +197,28 @@
     -ms-transform: rotateX(360deg);
     transform: rotateX(360deg);
   }
+}
+
+.studentContainer {
+  width: 80%;
+  min-height: 80vh;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+
+.studentContainer > img {
+  width: 278px;
+  height: 320px;
+}
+
+.studentContainer > :nth-child(1) {
+  margin-top: 0px !important;
+}
+
+.studentContainer:hover > img {
+  margin-left: 0 !important;
+  margin-top: 0 !important;
 }
