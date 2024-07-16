@@ -1,0 +1,54 @@
+.SavingsContainer {
+  width: 184px;
+  height: 212px;
+  border-radius: 10px;
+  background-color: #001655;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 8px;
+}
+
+.SavingsImages {
+  margin-top: 2px;
+  border: solid #001655;
+  display: flex;
+  width: 140px;
+}
+
+.numberSavings {
+  width: 18px;
+  height: 18px;
+  border: none;
+  margin-left: calc(100% - 55px);
+  border-radius: 100px;
+  background-color: #0241fe;
+  font-size: 10px;
+  line-height: 14px;
+  font-weight: 700;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #ffffff;
+  padding-top: 1px;
+}
+
+.textSavings {
+  width: 140px;
+  border: solid #001655;
+}
+
+.textSavings h1 {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+  color: #f6f6f6;
+}
+
+.textSavings p {
+  margin-top: 3px;
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 14px;
+  color: #bfbfbf;
+}

@@ -1,0 +1,82 @@
+.Container {
+  width: 100%;
+  height: calc(100vh - 60px);
+  background-color: #000e39;
+  z-index: 5;
+}
+
+.Container .SecondContainer {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.SecondContainer .SecondChildContainer {
+  width: 80%;
+  height: 490px;
+  display: flex;
+}
+
+.SecondRightSideContainer {
+  width: 620px;
+  height: 490px;
+  margin-left: 100px;
+}
+
+.SecondRightSideContainer .MarketingsContainer {
+  width: 400px;
+  height: 444px;
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 5px;
+  margin-left: 135px;
+}
+
+.MarketingsContainer .saving {
+  width: 140px;
+  height: 212px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: column;
+}
+
+.savingCircleContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 50px;
+}
+.savingCircleContainer img {
+  position: absolute;
+}
+
+.savingCircleContainer .prcent {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 18px;
+  color: #ffffff;
+}
+
+.savingCircleContainer .CircleSaving {
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 14px;
+  color: #ffffff;
+}
+
+.CircleText {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 19px;
+  color: #ffffff;
+  text-align: center;
+  margin-top: 30px;
+}

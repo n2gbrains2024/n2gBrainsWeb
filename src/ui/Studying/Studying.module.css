@@ -1,0 +1,73 @@
+.Container {
+  width: 100%;
+  height: calc(100vh - 60px);
+  background-color: #000e39;
+  display: flex;
+  flex-direction: column;
+  position: sticky;
+  top: 0;
+  left: 0;
+}
+
+.Container .firstContainer {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: solid 1px #000e39;
+}
+
+.firstContainer .firstChildContainer {
+  width: 80%;
+  height: 490px;
+  display: flex;
+}
+
+
+.firstRightSideContainer {
+  width: 620px;
+  height: 490px;
+  margin-left: 100px;
+}
+
+.firstRightSideContainer .professions {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.firstRightSideContainer .professions div {
+  position: absolute;
+  width: 230px;
+  height: 18vh;
+  border: 1px solid white;
+  border-radius: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.professions .ArowwImagesContainer {
+  border: white solid 1px;
+  width: 38px;
+  height: 38px;
+  margin-left: 60px;
+  margin-top: 1px;
+  border-radius: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: rotate(30deg);
+}
+
+.ArowwImagesContainer img {
+  position: absolute;
+  transform: rotate(-30deg);
+}
+.ArowwImagesContainer:hover {
+  background: linear-gradient(to right, #93a8e9, #7425dc, #fa550c);
+  border: none;
+}

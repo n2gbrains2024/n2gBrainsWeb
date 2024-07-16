@@ -1,0 +1,76 @@
+.firstLeftSideContainer {
+  width: 36%;
+  height: 490px;
+  margin-left: 85px;
+}
+
+.firstLeftSideContainer h3 {
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 40px;
+  color: #f6f6f6;
+}
+
+.firstLeftSideContainer button {
+  width: 172px;
+  height: 32px;
+  margin-top: 30px;
+  border-radius: 100px;
+  font-size: 12px;
+  line-height: 14px;
+  font-weight: 700;
+  color: #f6f6f6;
+  border: none;
+  background: linear-gradient(to left, #9df79b, #0023fe);
+}
+
+.firstLeftSideContainer button:hover {
+  background: #0132c6;
+}
+
+.firstLeftSideContainer p {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+  color: #f6f6f6;
+  margin-top: 25px;
+}
+
+.choices {
+  margin-top: 120px;
+  display: flex;
+  flex-direction: column;
+  gap: 17px;
+  width: 16px;
+  height: 47px;
+  border: solid #000e39 1px;
+}
+.reverse {
+  flex-direction: column-reverse;
+}
+.choices div {
+  width: 100%;
+  border-radius: 100px;
+  height: 15px;
+}
+
+.selectPages1 {
+  border: solid #6d6d6d 1px;
+}
+
+.selectPages2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: solid #f0f0f0 1px;
+}
+
+.selectPages2 div {
+  width: 50%;
+  height: 50.8%;
+  margin-top: 0.2px;
+  background-color: #f0f0f0;
+  border: #f0f0f0;
+  border: solid #f0f0f0 1px;
+  border-radius: 100px;
+}

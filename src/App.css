@@ -7,42 +7,12 @@
 }
 html {
   overflow-x: hidden;
+  scroll-behavior: smooth;
 }
-body {
-  max-width: 2800px;
-  margin: 0 auto;
-  background: #f6f6f6;
-}
+
 button {
   cursor: pointer;
 }
 a {
   text-decoration: none;
-}
-.runnerTextSlider {
-  height: 42px;
-  transform: rotateZ(6deg);
-  background: #9cf49b4a;
-}
-.runnerTextSlider .item > div {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-left: 25px;
-  color: #8ad388;
-  font-size: 24px;
-  font-weight: 400;
-}
-
-.feedbacksSlider {
-  width: 125%;
-  height: 350px;
-  position: relative;
-  left: -12.5%;
-}
-
-.feedbacksSlider .item {
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
