@@ -8,8 +8,6 @@
   line-height: 50px;
   color: #00071c;
   text-transform: uppercase;
-  text-decoration: underline 6px #ff7219;
-  text-decoration-skip-ink: none;
 }
 .container > p {
   font-size: 22px;

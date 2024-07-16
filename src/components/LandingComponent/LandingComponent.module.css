@@ -1,61 +1,60 @@
 .landingDiv {
-    height: 395px;
-    margin-top: 100px;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
+  height: 395px;
+  margin-top: 100px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
 }
 
 .videoContainer {
-    width: 582px;
-    height: 100%;
-    background: black;
-    border-radius: 30px;
+  width: 582px;
+  height: 100%;
+  background: black;
+  border-radius: 30px;
 }
 
 .player {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    border-radius: 30px;
-    opacity: 0.7;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 30px;
+  opacity: 0.7;
 }
 
 .player:hover {
-    opacity: 1;
+  opacity: 1;
 }
 
 .texts {
-    width: 30%;
-    height: 70%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
+  width: 30%;
+  height: 70%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
 }
 
-.texts>h1 {
-    text-transform: uppercase;
-    font-size: 40px;
-    font-weight: 700;
-    line-height: 48px;
-    color: #000E39;
-    text-decoration: underline #FF7219;
-    text-decoration-skip-ink: none;
+.texts > h1 {
+  text-transform: uppercase;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 48px;
+  color: #000e39;
+  text-decoration-skip-ink: none;
 }
 
-.texts>p {
-    font-weight: 400;
-    line-height: 24px;
+.texts > p {
+  font-weight: 400;
+  line-height: 24px;
 }
 
-.texts>button {
-    width: 196px;
-    height: 32px;
-    padding: 4px 30px 4px 30px;
-    border: none;
-    background: #012BAA;
-    border-radius: 30px;
-    font-size: 12px;
-    font-weight: 700;
-    color: white;
+.texts > button {
+  width: 196px;
+  height: 32px;
+  padding: 4px 30px 4px 30px;
+  border: none;
+  background: #012baa;
+  border-radius: 30px;
+  font-size: 12px;
+  font-weight: 700;
+  color: white;
 }

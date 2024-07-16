@@ -1,50 +1,50 @@
 .card {
-    width: 380px;
-    height: 78px;
-    border-radius: 5px;
-    border: 0.5px solid #00071C;
-    background: #F0F0F0;
-    box-shadow: 5px 5px #FF7219;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    padding: 0px 18px 0px 18px;
-    margin-top: 20px;
-    position: relative;
-    transition: 0ms;
+  width: 380px;
+  height: 78px;
+  border-radius: 5px;
+  border: 0.5px solid #00071c;
+  background: #f0f0f0;
+  box-shadow: 5px 5px #8ad388;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 0px 18px 0px 18px;
+  margin-top: 20px;
+  position: relative;
+  transition: 0ms;
 }
 
-.card>p {
-    font-size: 18px !important;
-    font-weight: 700 !important;
-    position: relative;
-    top: -2.25px;
+.card > p {
+  font-size: 18px !important;
+  font-weight: 700 !important;
+  position: relative;
+  top: -2.25px;
 }
 
 .gradient {
-    display: none;
+  display: none;
 }
 
 .card:hover {
-    box-shadow: none;
+  box-shadow: none;
 }
 
 .card:hover::after {
-    width: 100%;
-    height: 100%;
-    content: "";
-    background: linear-gradient(to left, #0132C6, #9747FF, #FA550C);
-    z-index: -1;
-    position: absolute;
-    left: 5.5px;
-    top: 5.5px;
-    border-radius: 5px;
+  width: 100%;
+  height: 100%;
+  content: "";
+  background: linear-gradient(to left, #0132c6, #9747ff, #fa550c);
+  z-index: -1;
+  position: absolute;
+  left: 5.5px;
+  top: 5.5px;
+  border-radius: 5px;
 }
 
-.card:hover>img {
-    display: none;
+.card:hover > img {
+  display: none;
 }
 
-.card:hover>.gradient {
-    display: inline;
+.card:hover > .gradient {
+  display: inline;
 }
