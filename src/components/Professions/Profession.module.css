@@ -1,0 +1,62 @@
+.smm,
+.uxUi,
+.solidity,
+.web p {
+  font-size: 10px;
+  color: #f6f6f6;
+}
+
+.smm,
+.solidity,
+.uxUi,
+.web h1 {
+  font-size: 11px;
+  color: #f6f6f6;
+}
+
+.smm {
+  top: 320px;
+  left: 30px;
+}
+
+.solidity {
+  top: 223px;
+  left: 163px;
+  transform: rotate(30deg);
+}
+
+.web {
+  left: 270px;
+  top: 90px;
+  transform: rotate(-30deg);
+}
+.uxUi {
+  top: 243px;
+  left: 357px;
+  transform: rotate(50deg);
+}
+
+.solidity > * {
+  transform: rotate(-30deg);
+}
+
+.web > * {
+  transform: rotate(30deg);
+}
+
+.uxUi > * {
+  transform: rotate(-50deg);
+}
+
+.web p {
+  margin-right: 12px;
+}
+
+.solidity p {
+  margin-left: 20px;
+}
+
+.uxUi p {
+  margin-left: 22px;
+  margin-top: -4px;
+}
