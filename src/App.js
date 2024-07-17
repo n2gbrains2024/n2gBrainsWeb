@@ -8,7 +8,6 @@ import Team from "./pages/Team/Team.jsx";
 import Portfolio from "./pages/Portfolio/Portfolio.jsx";
 import Contact from "./pages//Contact/Contact.jsx";
 import About from "./pages/About/About.jsx";
-import Footer from "./ui/Footer/Footer.jsx";
 
 function App() {
   return (
@@ -23,7 +22,6 @@ function App() {
         <Route path="/about" element={<About />} />
         <Route path="/contact" element={<Contact />} />
       </Routes>
-      {/* <Footer /> */}
     </div>
   );
 }

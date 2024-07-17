@@ -14,8 +14,8 @@ function Feedbacks() {
     arrows: false,
     containerClass: "feedbacksSlider",
     itemClass: "item",
-    autoPlaySpeed: 1000,
-    transitionDuration: 2000,
+    autoPlaySpeed: 300,
+    transitionDuration: 1000,
     responsive: {
       superLargeDesktop: {
         breakpoint: { max: 4000, min: 3000 },

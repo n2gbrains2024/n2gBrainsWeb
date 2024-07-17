@@ -27,9 +27,8 @@ a {
 }
 .runnerTextSlider .item > div {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
-  margin-left: 25px;
   color: #8ad388;
   font-size: 24px;
   font-weight: 400;

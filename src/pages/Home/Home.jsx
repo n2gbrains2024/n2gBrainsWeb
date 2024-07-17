@@ -1,11 +1,13 @@
-import Main from "../../ui/Main/Main"
+import ScrollRestoration from "../../helpers/ScrollRestoration";
+import Main from "../../ui/Main/Main";
 
-function Home(){
-    return (
-        <div>
-            <Main/>
-        </div>
-    )
+function Home() {
+  return (
+    <div>
+      <ScrollRestoration />
+      <Main />
+    </div>
+  );
 }
 
-export default Home
+export default Home;
