@@ -1,6 +1,5 @@
 import mainStyles from "./Main.module.css";
 import RunnerText from "../../components/RunnerText/RunnerText.jsx";
-import CourseCard from "../../components/CourseCard/CourseCard.jsx";
 import BlackComponent from "../BlackComponent/BlackComponent.jsx";
 import Services from "../Services/Services.jsx";
 import Contact from "../../ui/Contact/Contact";
@@ -10,6 +9,7 @@ import LandingComponent from "../../components/LandingComponent/LandingComponent
 import Students from "../Students/Students.jsx";
 import Feedbacks from "../Feedbacks/Feedbacks.jsx";
 import Footer from "../Footer/Footer.jsx";
+import Courses from "../Courses/Courses.jsx";
 
 function Main() {
   return (
@@ -17,7 +17,7 @@ function Main() {
       <LandingComponent />
       <BigCard />
       <RunnerText />
-      <CourseCard />
+      <Courses />
       <BlackComponent />
       <Services />
       <Contact />

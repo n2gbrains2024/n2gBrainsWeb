@@ -1,0 +1,44 @@
+.container {
+  width: 100%;
+  margin-top: 50px;
+  padding: 100px;
+  display: flex;
+  flex-direction: column;
+}
+.container h1 {
+  font-size: 38px;
+  font-weight: 700;
+  line-height: 50px;
+  color: #00071c;
+  text-transform: uppercase;
+  margin-left: 10%;
+}
+
+@media screen and (max-width: 1200px) {
+  .container {
+    padding: 40px;
+  }
+  .container h1 {
+    margin-left: 5%;
+  }
+}
+@media screen and (max-width: 780px) {
+  .container {
+    padding: 20px;
+  }
+  .container h1 {
+    font-size: 32px;
+  }
+}
+@media screen and (max-width: 660px) {
+  .container h1 {
+    margin-left: calc(50% - 150px);
+    line-height: 32px;
+    font-size: 26px;
+  }
+}
+@media screen and (max-width: 315px) {
+  .container {
+    transform: scale(0.8);
+  }
+}

@@ -9,45 +9,42 @@ function CourseCard() {
     <ScrollAnimation
       animateIn="zoomIn"
       animateOut="fadeOut"
-      className={styles.courseContainer}
+      className={styles.container}
     >
-      <div>
-        <h1>Առաջիկա դասընթացներ</h1>
-        <div className={styles.courseCard}>
-          <ScrollAnimation
-            animateIn="bounceInUp"
-            className={styles.courseInfo}
-            animateOnce={true}
-          >
-            <span>Online</span>
-            <div>
-              <h2>Ծրագրավորում</h2>
-              <p>Front-End ծրագրավորում սկսնակների համար</p>
-            </div>
-            <div className={styles.info}>
-              <span>
-                <img src={grayStar} alt="" />
-                <span>Սկիզբը՝ Փետրվարի 18</span>
-              </span>
-              <span>
-                <img src={grayStar} alt="" />
-                <span>Տևողություն՝ 6 ամիս</span>
-              </span>
-              <span>
-                <img src={grayStar} alt="" />
-                <span>Ամսավճար՝ 45000 </span>
-              </span>
-            </div>
-            <button>Ավելին</button>
-          </ScrollAnimation>
-          <ScrollAnimation
-            animateIn="bounceIn"
-            animateOut="bounceOut"
-            animateOnce={true}
-          >
-            <img src={narekImage} alt="" className={styles.narek} />
-          </ScrollAnimation>
-        </div>
+      <div className={styles.courseCard}>
+        <ScrollAnimation
+          animateIn="bounceInUp"
+          className={styles.courseInfo}
+          animateOnce={true}
+        >
+          <span>Online</span>
+          <div class={styles.titles}>
+            <h2>Ծրագրավորում</h2>
+            <p>Front-End ծրագրավորում սկսնակների համար</p>
+          </div>
+          <div className={styles.info}>
+            <span>
+              <img src={grayStar} alt="" />
+              <span>Սկիզբը՝ Փետրվարի 18</span>
+            </span>
+            <span>
+              <img src={grayStar} alt="" />
+              <span>Տևողություն՝ 6 ամիս</span>
+            </span>
+            <span>
+              <img src={grayStar} alt="" />
+              <span>Ամսավճար՝ 45000 </span>
+            </span>
+          </div>
+          <button>Ավելին</button>
+        </ScrollAnimation>
+        <ScrollAnimation
+          animateIn="bounceIn"
+          animateOut="bounceOut"
+          animateOnce={true}
+        >
+          <img src={narekImage} alt="" className={styles.narek} />
+        </ScrollAnimation>
       </div>
     </ScrollAnimation>
   );
