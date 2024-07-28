@@ -1,5 +1,5 @@
 .container {
-  width: 500px;
+  width: 80%;
   height: 246px;
   background: #f0f0f0;
   border: solid 1px #00071c;
@@ -55,10 +55,10 @@
   transform: rotateZ(180deg);
   position: absolute;
   top: -35px;
-  left: 40px;
+  left: 5%;
 }
 .bottomMarks {
   position: absolute;
   bottom: -35px;
-  right: 40px;
+  right: 5%;
 }
