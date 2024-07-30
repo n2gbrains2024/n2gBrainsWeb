@@ -7,9 +7,10 @@
   font-weight: 700;
   line-height: 50px;
   color: #00071c;
-  text-transform: uppercase;
 }
 .container > p {
+  width: 80%;
+  margin: auto;
   font-size: 22px;
   font-weight: 400;
   line-height: 28px;
@@ -25,7 +26,7 @@
 }
 
 .whiteShadow {
-  height: 450px;
+  height: 350px;
   position: absolute;
   z-index: 2;
 }
@@ -36,4 +37,67 @@
 .whiteShadowRight {
   right: 0;
   box-shadow: -10px 0px 100px 120px #f6f6f6;
+}
+
+@media screen and (max-width: 850px) {
+  .container h1 {
+    font-size: 32px;
+  }
+  .container p {
+    width: 90%;
+    font-size: 18px;
+  }
+
+  .whiteShadow {
+    height: 300px;
+  }
+  .whiteShadowLeft {
+    left: 0;
+    box-shadow: 10px 0px 60px 30px #f6f6f6;
+  }
+  .whiteShadowRight {
+    right: 0;
+    box-shadow: -10px 0px 60px 30px #f6f6f6;
+  }
+  .feedbacks {
+    margin-top: 10px;
+  }
+}
+@media screen and (max-width: 500px) {
+  .whiteShadow {
+    display: none;
+  }
+  .container h1 {
+    font-size: 28px;
+  }
+  .container p {
+    font-size: 16px;
+  }
+  .feedbacks {
+    margin-top: -20px;
+  }
+}
+@media screen and (max-width: 420px) {
+  .container h1 {
+    width: 90%;
+    margin: auto;
+    text-align: left;
+    font-size: 23px;
+    line-height: 28px;
+  }
+  .container p {
+    width: 90%;
+    font-size: 12px;
+    line-height: 19px;
+    text-align: left;
+  }
+  .feedbacks {
+    min-height: 0px;
+    max-height: 300px;
+  }
+}
+@media screen and (max-width: 310px) {
+  .container {
+    transform: scale(0.8);
+  }
 }
