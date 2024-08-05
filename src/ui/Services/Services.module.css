@@ -73,14 +73,45 @@
   .container p {
     font-size: 16px;
   }
-}
-@media screen and (max-width: 400px) {
+  .container > div > p {
+    margin-left: 5%;
+  }
   .container h1 {
-    font-size: 26px;
+    margin-left: 5%;
+  }
+}
+@media screen and (max-width: 450px) {
+  .container h1 {
+    font-size: 25px;
+    line-height: 40px;
+  }
+  .container > div > p {
+    margin-top: 0px;
+    font-size: 14px;
+    line-height: 22px;
   }
   .container button {
     height: 34px;
     font-size: 12px;
     margin-left: 2.5%;
+  }
+  .cards {
+    margin-top: 30px;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .container h1 {
+    font-size: 26px;
+    line-height: 32px;
+    margin-left: 0;
+  }
+  .container > div > p {
+    font-size: 16px;
+    line-height: 24px;
+    margin-left: 0;
+  }
+  .cards {
+    margin-left: -2.5%;
   }
 }

@@ -1,44 +1,66 @@
-.header{
-    width: 100%;
-    height: 50px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.header {
+  width: 100%;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-.header>div{
-    width: 80%;
-    height: 41px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+.header > div {
+  width: 80%;
+  height: 41px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
-.miniLogo{
-    width: 44px;
-    height: 41px;
+.miniLogo {
+  width: 44px;
+  height: 41px;
 }
-.info{
-    width: 23%;
-    height: 30px;
-    display: flex;
-    justify-content: space-between;
-}
-
-.icon{
-    width: 30px;
-    height: 30px;
+.info {
+  width: 25%;
+  height: 30px;
+  display: flex;
+  justify-content: space-evenly;
 }
 
-.phone{
-    width: 114px;
-    height: 30px;
-    background: #0132C6;
-    font-size: 12px;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    color: white;
-    font-weight: 700;
+.icon {
+  width: 30px;
+  height: 30px;
 }
-.phone>img{
-    width: 15px;
+
+.phone {
+  width: 114px;
+  height: 30px;
+  background: #0132c6;
+  font-size: 12px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  color: white;
+  font-weight: 700;
+}
+.phone > img {
+  width: 15px;
+}
+.phoneAnchor {
+  margin-left: 10px;
+}
+
+@media screen and (max-width: 1200px) {
+  .header > div {
+    width: 90%;
+  }
+  .info {
+    width: 35%;
+  }
+}
+@media screen and (max-width: 780px) {
+  .info {
+    width: 45%;
+  }
+}
+@media screen and (max-width: 635px) {
+  .header {
+    display: none;
+  }
 }

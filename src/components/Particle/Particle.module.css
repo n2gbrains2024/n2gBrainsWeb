@@ -1,9 +1,7 @@
 .particle {
-  height: 60px;
+  height: 55px;
   border: solid 1px #f6f6f6;
   color: white;
-  padding-left: 40px;
-  padding-right: 40px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -13,4 +11,10 @@
 }
 .roundParticle {
   border-radius: 100px;
+}
+
+@media screen and (max-width: 720px) {
+  .particle {
+    border-width: 3px;
+  }
 }
