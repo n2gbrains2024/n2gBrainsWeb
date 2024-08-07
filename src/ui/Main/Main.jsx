@@ -21,7 +21,7 @@ function Main() {
       <BlackComponent />
       <Services />
       <Contact />
-      <Students />
+      {/* <Students /> */}
       <Feedbacks />
       <We />
       <div className={mainStyles.footerLine}></div>

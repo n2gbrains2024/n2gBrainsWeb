@@ -29,7 +29,17 @@
   align-items: center;
   margin: auto;
 }
-
+.menuIcon {
+  cursor: pointer;
+}
+.openedMenu {
+  position: fixed;
+  top: 49px;
+  left: 0;
+  width: 100vw;
+  height: calc(100vh - 50px);
+  background: rgb(37, 37, 99);
+}
 @media screen and (max-width: 880px) {
   .menuItems {
     width: 90%;
