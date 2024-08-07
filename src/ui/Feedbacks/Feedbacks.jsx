@@ -83,11 +83,11 @@ function Feedbacks() {
     <div className={styles.container}>
       <ScrollAnimation animateIn="fadeInRight" animateOut="fadeOut">
         <h1>Կարծիքներ մեր մասին</h1>
+        <p className={styles.description}>
+          Մեր աշակերտների գոհ և շնորհակալ կարծիքները լավագույն գնահատականն են
+          մեզ համար։
+        </p>
       </ScrollAnimation>
-      <p>
-        Մեր աշակերտների գոհ և շնորհակալ կարծիքները լավագույն գնահատականն են մեզ
-        համար։
-      </p>
       <div className={styles.feedbacks}>
         <div
           className={`${styles.whiteShadow} ${styles.whiteShadowLeft}`}
@@ -100,6 +100,7 @@ function Feedbacks() {
                 user={feedback.user}
                 courseTitle={feedback.courseTitle}
                 image={feedback.image}
+                key={index}
               />
             );
           })}

@@ -8,12 +8,12 @@ function We(params) {
       <div className={styles.texts}>
         <ScrollAnimation animateIn="fadeInRight" animateOut="fadeOut">
           <h2>ԱՀԱ ԵՎ ՄԵՆՔ</h2>
+          <p>
+            Հրաշալի մասնագետների ֆորմուլա մեկ վայրում, կրեատիվ և ստեղծարար թիմ։
+          </p>
         </ScrollAnimation>
-        <p>
-          Հրաշալի մասնագետների ֆորմուլա մեկ վայրում, կրեատիվ և ստեղծարար թիմ։
-        </p>
       </div>
-      <img className={styles.image} />
+      <img className={styles.image} alt="" />
     </section>
   );
 }
