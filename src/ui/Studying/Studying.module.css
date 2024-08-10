@@ -19,16 +19,13 @@
 }
 
 .firstContainer .firstChildContainer {
-  width: 80%;
-  height: 490px;
+  width: 90%;
   display: flex;
+  justify-content: space-between;
 }
 
-
 .firstRightSideContainer {
-  width: 620px;
-  height: 490px;
-  margin-left: 100px;
+  width: 45%;
 }
 
 .firstRightSideContainer .professions {
@@ -36,6 +33,7 @@
   display: flex;
   flex-direction: column;
   height: 100%;
+  border: solid #000e39;
 }
 
 .firstRightSideContainer .professions div {
@@ -51,10 +49,10 @@
 }
 
 .professions .ArowwImagesContainer {
-  border: white solid 1px;
+  border: #9df49b solid 1px;
   width: 38px;
   height: 38px;
-  margin-left: 60px;
+
   margin-top: 1px;
   border-radius: 100px;
   display: flex;
@@ -68,6 +66,73 @@
   transform: rotate(-30deg);
 }
 .ArowwImagesContainer:hover {
-  background: linear-gradient(to right, #93a8e9, #7425dc, #fa550c);
+  background: linear-gradient(to right, blue, aquaMarine);
   border: none;
+}
+
+@media screen and (max-width: 1290px) {
+  .firstRightSideContainer {
+    width: 53%;
+  }
+
+  .ArowwImagesContainer {
+    margin-left: 1px;
+  }
+}
+
+@media screen and (max-width: 980px) {
+  .firstRightSideContainer .professions div {
+    width: 195px;
+    height: 15vh;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .firstChildContainer {
+    flex-direction: column;
+    height: 630px;
+    margin-top: 20px;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .firstRightSideContainer {
+    width: 510px;
+    height: 350px;
+  }
+
+  .firstRightSideContainer .ArowwImagesContainer {
+    display: none;
+  }
+
+  .firstChildContainer .professions {
+    margin-left: 0;
+  }
+
+  .firstRightSideContainer .professions div {
+    width: 230px;
+    height: 17vh;
+  }
+}
+
+@media screen and (max-width: 620px) {
+  .firstRightSideContainer {
+    width: 400px;
+  }
+
+  .firstRightSideContainer .professions div {
+    width: 210px;
+    height: 16vh;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .firstRightSideContainer {
+    width: 300px;
+  }
+
+  .firstRightSideContainer .professions div {
+    width: 160px;
+    height: 93.05px;
+  }
 }

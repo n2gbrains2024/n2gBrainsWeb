@@ -10,10 +10,10 @@ const Savings = ({
   return (
     <section className={styles.SavingsContainer} key={key}>
       <div className={styles.numberSavings}>{numbersSavings}</div>
-      <div className={styles.SavingsImages}>
-        <img src={src} alt="images" />
-      </div>
       <div className={styles.textSavings}>
+        <div className={styles.SavingsImages}>
+          <img src={src} alt="images" />
+        </div>
         <h1>{titleSavings}</h1>
         <p>{descriptionSavings}</p>
       </div>

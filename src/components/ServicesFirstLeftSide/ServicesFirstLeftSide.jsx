@@ -13,20 +13,23 @@ function ServicesFirstLeftSide({
 
   return (
     <div className={styles.firstLeftSideContainer}>
-      <h3>{title}</h3>
+      <h1>{title}</h1>
       <p>{description}</p>
       <button>{buttonText}</button>
 
       <div className={`${styles.choices} ${first ? styles.reverse : ""}`}>
+        <div className={styles.selectPages1}></div>
+
         <div
-          className={styles.selectPages1}
+          className={styles.selectPages2}
           onClick={() => {
             scrollPage(scroll);
           }}
-        ></div>
-        <div className={styles.selectPages2}>
+        >
           <div></div>
         </div>
+
+        <div className={styles.selectPages1}></div>
       </div>
     </div>
   );

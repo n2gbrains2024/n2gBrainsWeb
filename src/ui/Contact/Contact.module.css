@@ -65,7 +65,7 @@
     height: 35px;
   }
   .form input {
-    height: 7vh;
+    height: 55px;
     width: 330px;
   }
 
@@ -130,7 +130,7 @@
     height: 450px;
   }
   .data h2 {
-    font-size: 23px;
+    font-size: 25px;
     line-height: 38px;
   }
 
@@ -148,15 +148,16 @@
     height: 30px;
   }
 
+  .img-container {
+  }
   .img-container img {
-    width: 180px;
+    width: 170px;
     margin-top: 20px;
   }
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 490px) {
   .data {
-    width: 270px;
     margin-left: 17px;
     height: 360px;
     margin-top: -200px;

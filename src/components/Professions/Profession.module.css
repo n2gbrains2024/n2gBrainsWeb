@@ -60,3 +60,235 @@
   margin-left: 22px;
   margin-top: -4px;
 }
+
+@media screen and (max-width: 1200px) {
+  .smm,
+  .solidity,
+  .uxUi,
+  .web {
+    font-size: 13px;
+  }
+  .smm {
+    top: 300px;
+    left: 10px;
+
+    transform: rotate(-45deg);
+  }
+
+  .solidity {
+    top: 140px;
+    left: 20px;
+    transform: rotate(-20deg);
+  }
+
+  .web {
+    top: 180px;
+    left: 230px;
+    transform: rotate(20deg);
+  }
+
+  .uxUi {
+    transform: rotate(0deg);
+    left: 210px;
+    top: 320px;
+  }
+
+  .solidity > * {
+    transform: rotate(20deg);
+  }
+  .solidity h1 {
+    margin-top: -10px;
+  }
+
+  .solidity p {
+    margin-left: -10px;
+  }
+
+  .smm > * {
+    transform: rotate(45deg);
+  }
+  .smm h1 {
+    margin-top: -10px;
+    margin-left: 30px;
+  }
+  .smm p {
+    margin-top: -8px;
+  }
+
+  .uxUi > * {
+    transform: rotate(0deg);
+  }
+  .uxUi p {
+    margin-left: -5px;
+    margin-top: 1px;
+  }
+
+  .web > * {
+    transform: rotate(-20deg);
+  }
+
+  .web h1,
+  p {
+    font-size: 13px;
+  }
+
+  .web p {
+    margin-left: 25px;
+    margin-top: 3px;
+  }
+}
+
+@media screen and (max-width: 980px) {
+  .smm,
+  .solidity,
+  .uxUi,
+  .web {
+    font-size: 11px;
+  }
+  .web h1 {
+    font-size: 11px;
+  }
+
+  .smm p,
+  .solidity p,
+  .uxUi p,
+  .web p {
+    font-size: 11px;
+  }
+
+  .uxUi {
+    left: 180px;
+    top: 300px;
+  }
+  .smm {
+    left: 5;
+    top: 287px;
+  }
+
+  .solidity {
+    top: 160px;
+    left: 0;
+  }
+
+  .web {
+    left: 185px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .uxUi,
+  .solidity,
+  .web,
+  .smm {
+    font-size: 12px;
+  }
+  .web {
+    font-size: 12px;
+  }
+
+  .solidity {
+    top: 20px;
+    left: 50px;
+  }
+  .web {
+    left: 260px;
+    top: 65px;
+  }
+  .smm {
+    top: 165px;
+    left: 30px;
+    transform: rotate(-35deg);
+  }
+
+  .uxUi {
+    top: 200px;
+    left: 225px;
+  }
+
+  .smm > * {
+    transform: rotate(35deg);
+  }
+}
+
+@media screen and (max-width: 620px) {
+  .solidity {
+    left: 0;
+  }
+  .smm {
+    left: 2px;
+    top: 160px;
+    transform: rotate(-45deg);
+  }
+  .web {
+    left: 190px;
+  }
+
+  .uxUi {
+    left: 172px;
+    top: 190px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .uxUi,
+  .solidity,
+  .web,
+  .smm {
+    font-size: 12px;
+    line-height: 14px;
+  }
+
+  .solidity p,
+  .smm p,
+  .uxUi p {
+    font-size: 10px;
+    line-height: 14px;
+  }
+
+  .web p {
+    font-size: 10px;
+    line-height: 14px;
+  }
+
+  .solidity h1,
+  .smm h1,
+  .uxUi h1 {
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 14px;
+  }
+
+  .web h1 {
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 14px;
+  }
+
+  .solidity {
+    left: -4px;
+  }
+
+  .smm {
+    top: 131px;
+    left: -4px;
+  }
+
+  .web {
+    left: 139px;
+    top: 60px;
+    font-size: 12px;
+    line-height: 14px;
+  }
+
+  .uxUi {
+    left: 127px;
+    top: 161px;
+  }
+
+  .smm > * {
+    transform: rotate(45deg);
+  }
+  .smm p {
+    margin-left: -2px;
+  }
+}
