@@ -1,6 +1,6 @@
 .Container {
   width: 100%;
-  height: calc(100vh - 60px);
+  height: 100vh;
   background-color: #000e39;
   z-index: 5;
 }
@@ -14,27 +14,23 @@
 }
 
 .SecondContainer .SecondChildContainer {
-  width: 80%;
-  height: 490px;
+  width: 90%;
   display: flex;
+  justify-content: space-between;
 }
 
 .SecondRightSideContainer {
-  width: 620px;
-  height: 490px;
-  margin-left: 100px;
+  margin-right: 110px;
 }
 
 .SecondRightSideContainer .MarketingsContainer {
-  width: 400px;
   height: 444px;
   display: flex;
   flex-direction: column-reverse;
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
-  gap: 5px;
-  margin-left: 135px;
+  gap: 20px;
 }
 
 .MarketingsContainer .saving {
@@ -79,4 +75,55 @@
   color: #ffffff;
   text-align: center;
   margin-top: 30px;
+}
+
+@media screen and (max-width: 1290px) {
+  .SecondRightSideContainer {
+    margin-right: 0px;
+  }
+}
+
+@media screen and (max-width: 980px) {
+  .SecondRightSideContainer .MarketingsContainer {
+    gap: 10px;
+    justify-content: start;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .SecondChildContainer {
+    flex-direction: column;
+    align-items: center;
+    height: 95%;
+  }
+
+  .SecondRightSideContainer .MarketingsContainer {
+    height: 375px;
+  }
+
+  .MarketingsContainer .saving {
+    border: solid #000e39;
+    height: 180px;
+    justify-content: space-between;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .SecondRightSideContainer {
+    margin-left: -10px;
+  }
+  .MarketingsContainer {
+  }
+  .MarketingsContainer .saving {
+    justify-content: space-around;
+  }
+  .MarketingsContainer .saving img {
+    width: 100px;
+  }
+
+  .CircleText {
+    font-size: 10px;
+    line-height: 14px;
+    font-weight: 400;
+  }
 }
