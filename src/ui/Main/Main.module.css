@@ -4,3 +4,15 @@
   background: #00071c;
   margin-top: 100px;
 }
+
+@media screen and (max-width: 1020px) {
+  .footerLine {
+    height: 55px;
+  }
+}
+
+@media screen and (max-width: 780px) {
+  .footerLine {
+    display: none;
+  }
+}
