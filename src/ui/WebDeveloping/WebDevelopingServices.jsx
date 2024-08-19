@@ -47,7 +47,7 @@ function WebDeveloping() {
             <div className={styles.MarketingsContainer}>
               <div className={styles.saving}>
                 <div className={styles.savingCircleContainer}>
-                  <img src={GradientSircle} />
+                  <img src={GradientSircle} alt="" />
                   <p className={styles.prcent}>+30%</p>
                   <p className={styles.CircleSaving}>խնայում</p>
                 </div>

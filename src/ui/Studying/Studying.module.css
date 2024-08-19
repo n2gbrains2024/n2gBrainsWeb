@@ -39,7 +39,7 @@
 .firstRightSideContainer .professions div {
   position: absolute;
   width: 230px;
-  height: 18vh;
+  height: 125px;
   border: 1px solid white;
   border-radius: 100px;
   display: flex;
@@ -70,48 +70,33 @@
   border: none;
 }
 
-@media screen and (max-width: 1290px) {
-  .firstRightSideContainer {
-    width: 53%;
-  }
-
-  .ArowwImagesContainer {
-    margin-left: 1px;
-  }
-}
-
-@media screen and (max-width: 980px) {
+@media screen and (max-width: 1024px) {
   .firstRightSideContainer .professions div {
-    width: 195px;
-    height: 15vh;
+    width: 230px;
   }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1020px) {
   .firstChildContainer {
     flex-direction: column;
-    height: 630px;
-    margin-top: 20px;
     justify-content: center;
     align-items: center;
   }
 
   .firstRightSideContainer {
-    width: 510px;
-    height: 350px;
+    margin-top: 100px;
+    width: 600px;
+    height: 450px;
+    border: solid white;
   }
 
   .firstRightSideContainer .ArowwImagesContainer {
     display: none;
   }
 
-  .firstChildContainer .professions {
-    margin-left: 0;
-  }
-
   .firstRightSideContainer .professions div {
-    width: 230px;
-    height: 17vh;
+    width: 300px;
+    height: 155px;
   }
 }
 
@@ -122,13 +107,13 @@
 
   .firstRightSideContainer .professions div {
     width: 210px;
-    height: 16vh;
   }
 }
 
 @media screen and (max-width: 480px) {
   .firstRightSideContainer {
     width: 300px;
+    height: 310px;
   }
 
   .firstRightSideContainer .professions div {

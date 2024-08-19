@@ -13,28 +13,21 @@
   align-items: center;
 }
 
-.SecondContainer .SecondChildContainer {
+.SecondChildContainer {
   width: 90%;
   display: flex;
   justify-content: space-between;
 }
 
-.SecondRightSideContainer {
-  margin-right: 110px;
-}
-
 .SecondRightSideContainer .MarketingsContainer {
-  height: 444px;
-  display: flex;
-  flex-direction: column-reverse;
-  justify-content: space-between;
-  align-items: center;
-  flex-wrap: wrap;
+  height: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
   gap: 20px;
 }
 
 .MarketingsContainer .saving {
-  width: 140px;
+  width: 185px;
   height: 212px;
   border-radius: 10px;
   display: flex;
@@ -77,53 +70,46 @@
   margin-top: 30px;
 }
 
-@media screen and (max-width: 1290px) {
-  .SecondRightSideContainer {
-    margin-right: 0px;
+@media screen and (max-width: 1024px) {
+  .MarketingsContainer .saving {
+    width: 160px;
+    height: 210px;
   }
 }
 
-@media screen and (max-width: 980px) {
-  .SecondRightSideContainer .MarketingsContainer {
-    gap: 10px;
-    justify-content: start;
-  }
-}
-
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1020px) {
   .SecondChildContainer {
     flex-direction: column;
+    justify-content: space-evenly;
     align-items: center;
-    height: 95%;
+    justify-content: center;
   }
 
-  .SecondRightSideContainer .MarketingsContainer {
-    height: 375px;
+  .SecondRightSideContainer {
+    width: 54%;
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
   }
 
   .MarketingsContainer .saving {
-    border: solid #000e39;
+    width: 170px;
     height: 180px;
-    justify-content: space-between;
   }
 }
 
 @media screen and (max-width: 480px) {
   .SecondRightSideContainer {
-    margin-left: -10px;
+    width: 100%;
   }
-  .MarketingsContainer {
-  }
+
   .MarketingsContainer .saving {
+    width: 140px;
+    height: 180px;
     justify-content: space-around;
-  }
-  .MarketingsContainer .saving img {
-    width: 100px;
   }
 
   .CircleText {
-    font-size: 10px;
-    line-height: 14px;
-    font-weight: 400;
+    font-size: 11px;
   }
 }
