@@ -6,8 +6,8 @@
   display: flex;
   flex-direction: column;
   position: sticky;
-  top: 40px;
   left: 0;
+  top: 0;
 }
 
 .Container .firstContainer {
@@ -127,6 +127,9 @@
 }
 
 @media screen and (max-width: 380px) {
+  .Container {
+    top: 40px;
+  }
   .firstContainer {
     border: solid white;
   }
