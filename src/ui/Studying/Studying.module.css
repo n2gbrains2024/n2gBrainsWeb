@@ -1,11 +1,12 @@
 .Container {
   width: 100%;
+  height: 100vh;
   height: calc(100vh - 60px);
   background-color: #000e39;
   display: flex;
   flex-direction: column;
   position: sticky;
-  top: 0;
+  top: 40px;
   left: 0;
 }
 
@@ -87,7 +88,6 @@
     margin-top: 100px;
     width: 600px;
     height: 450px;
-    border: solid white;
   }
 
   .firstRightSideContainer .ArowwImagesContainer {
@@ -111,13 +111,23 @@
 }
 
 @media screen and (max-width: 480px) {
+  .Container .firstContainer {
+    height: 100%;
+  }
   .firstRightSideContainer {
     width: 300px;
     height: 310px;
+    margin-top: 40px;
   }
 
   .firstRightSideContainer .professions div {
     width: 160px;
     height: 93.05px;
+  }
+}
+
+@media screen and (max-width: 380px) {
+  .firstContainer {
+    border: solid white;
   }
 }

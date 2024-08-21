@@ -14,6 +14,7 @@
 }
 
 .SecondChildContainer {
+  margin-top: 90px;
   width: 90%;
   display: flex;
   justify-content: space-between;
@@ -99,8 +100,12 @@
 }
 
 @media screen and (max-width: 480px) {
+  .SecondChildContainer {
+    margin-top: 40px;
+  }
   .SecondRightSideContainer {
     width: 100%;
+    margin-top: 50px;
   }
 
   .MarketingsContainer .saving {
@@ -111,5 +116,34 @@
 
   .CircleText {
     font-size: 11px;
+  }
+}
+
+@media screen and (max-width: 380px) {
+  .Container {
+  }
+  .Container .SecondContainer {
+    /* height: 70%; */
+  }
+
+  .SecondContainer .SecondChildContainer {
+  }
+  .SecondRightSideContainer {
+    width: 100%;
+    margin-top: 30px;
+  }
+
+  .SecondRightSideContainer .MarketingsContainer {
+    gap: 10px;
+  }
+
+  .MarketingsContainer .saving {
+    width: 140px;
+    height: 150px;
+    gap: 10px;
+  }
+
+  .CircleText {
+    font-size: 9px;
   }
 }

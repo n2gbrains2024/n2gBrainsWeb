@@ -93,3 +93,31 @@
     line-height: 14px;
   }
 }
+
+@media screen and (max-width: 380px) {
+  
+  .SavingsContainer {
+    width: 130px;
+    height: 150px;
+  }
+
+  .numberSavings {
+    position: absolute;
+    margin-left: 90px;
+  }
+
+  .SavingsContainer .textSavings {
+    width: 110px;
+  }
+
+  .textSavings h1 {
+    font-size: 10px;
+    font-weight: 700;
+    line-height: 14px;
+  }
+  .textSavings p {
+    font-size: 8px;
+    font-weight: 400;
+    line-height: 14px;
+  }
+}
