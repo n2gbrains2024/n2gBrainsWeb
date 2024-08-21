@@ -1,11 +1,11 @@
 .Container {
   width: 100%;
   height: calc(100vh - 60px);
-  background-color: #000e39;
+  background: #000e39;
   display: flex;
   flex-direction: column;
   position: sticky;
-  top: 0;
+  top: 60px;
   left: 0;
 }
 
@@ -15,7 +15,6 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  border: solid 1px #000e39;
 }
 
 .firstContainer .firstChildContainer {
@@ -33,7 +32,6 @@
   display: flex;
   flex-direction: column;
   height: 100%;
-  border: solid #000e39;
 }
 
 .firstRightSideContainer .professions div {

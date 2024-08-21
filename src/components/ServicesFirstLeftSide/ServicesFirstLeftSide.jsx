@@ -10,7 +10,6 @@ function ServicesFirstLeftSide({
   const scrollPage = (scrollY) => {
     window.scrollTo(0, scrollY);
   };
-
   return (
     <div className={styles.firstLeftSideContainer}>
       <h1>{title}</h1>
@@ -19,7 +18,6 @@ function ServicesFirstLeftSide({
 
       <div className={`${styles.choices} ${first ? styles.reverse : ""}`}>
         <div className={styles.selectPages1}></div>
-
         <div
           className={styles.selectPages2}
           onClick={() => {
@@ -28,7 +26,6 @@ function ServicesFirstLeftSide({
         >
           <div></div>
         </div>
-
         <div className={styles.selectPages1}></div>
       </div>
     </div>
