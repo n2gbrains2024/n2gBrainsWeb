@@ -9,6 +9,7 @@ import LandingComponent from "../../components/LandingComponent/LandingComponent
 import Feedbacks from "../Feedbacks/Feedbacks.jsx";
 import Footer from "../Footer/Footer.jsx";
 import Courses from "../Courses/Courses.jsx";
+import MainServices from "../MainServices/MainServices.jsx";
 
 function Main() {
   return (
@@ -20,6 +21,7 @@ function Main() {
       <BlackComponent />
       <Services />
       <Contact />
+      <MainServices />
       <Feedbacks />
       <We />
       <div className={mainStyles.footerLine}></div>
