@@ -86,25 +86,22 @@
   }
 }
 
-@media screen and (max-width: 980px) {
+@media screen and (max-width: 1020px) {
   .firstLeftSideContainer {
     width: 80%;
     text-align: center;
   }
   .firstLeftSideContainer p {
-    font-size: 28px;
-    line-height: 32px;
+    font-size: 20px;
+    line-height: 30px;
   }
 
   .firstLeftSideContainer h1 {
-    font-size: 40px;
+    font-size: 38px;
   }
 
   .firstLeftSideContainer button {
     font-size: 11px;
-  }
-  .firstLeftSideContainer .choices {
-    margin-top: 40px;
   }
 
   .firstLeftSideContainer .choices {

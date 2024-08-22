@@ -8,10 +8,10 @@ const Savings = ({
   numbersSavings,
 }) => {
   return (
-    <section className={styles.SavingsContainer} key={key}>
+    <section className={styles.savingsContainer} key={key}>
       <div className={styles.numberSavings}>{numbersSavings}</div>
       <div className={styles.textSavings}>
-        <div className={styles.SavingsImages}>
+        <div className={styles.savingsImages}>
           <img src={src} alt="images" />
         </div>
         <h1>{titleSavings}</h1>

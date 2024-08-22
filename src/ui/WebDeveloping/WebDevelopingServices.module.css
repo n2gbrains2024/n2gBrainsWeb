@@ -3,12 +3,12 @@
   height: calc(100vh - 60px);
   background: #000e39;
   position: sticky;
-  top: 60px;
+  top: 0px;
   left: 0;
   z-index: 2;
 }
 
-.Container .SecondContainer {
+.Container .secondContainer {
   width: 100%;
   height: 100%;
   display: flex;
@@ -16,21 +16,21 @@
   align-items: center;
 }
 
-.SecondChildContainer {
+.secondChildContainer {
   margin-top: 90px;
   width: 90%;
   display: flex;
   justify-content: space-between;
 }
 
-.SecondRightSideContainer .MarketingsContainer {
+.secondRightSideContainer .marketingsContainer {
   height: 100%;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 20px;
 }
 
-.MarketingsContainer .saving {
+.marketingsContainer .saving {
   width: 185px;
   height: 212px;
   border-radius: 10px;
@@ -58,14 +58,14 @@
   color: #ffffff;
 }
 
-.savingCircleContainer .CircleSaving {
+.savingCircleContainer .circleSaving {
   font-weight: 400;
   font-size: 10px;
   line-height: 14px;
   color: #ffffff;
 }
 
-.CircleText {
+.circleText {
   font-weight: 400;
   font-size: 12px;
   line-height: 19px;
@@ -75,78 +75,70 @@
 }
 
 @media screen and (max-width: 1024px) {
-  .MarketingsContainer .saving {
+  .marketingsContainer .saving {
     width: 160px;
     height: 210px;
   }
 }
 
 @media screen and (max-width: 1020px) {
-  .SecondChildContainer {
+  .Container {
+    top: 45px;
+  }
+  .secondChildContainer {
+    height: 100%;
     flex-direction: column;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: center;
-    justify-content: center;
+    margin-top: 0px;
+    gap: 40px;
   }
 
-  .SecondRightSideContainer {
-    width: 54%;
-    margin-top: 100px;
-    display: flex;
-    justify-content: center;
+  .secondRightSideContainer .marketingsContainer {
+    gap: 10px;
   }
-
-  .MarketingsContainer .saving {
-    width: 170px;
+  .marketingsContainer .saving {
+    width: 160px;
     height: 180px;
   }
 }
 
 @media screen and (max-width: 480px) {
-  .SecondChildContainer {
+  .secondChildContainer {
     margin-top: 40px;
   }
-  .SecondRightSideContainer {
-    width: 100%;
-    margin-top: 50px;
-  }
 
-  .MarketingsContainer .saving {
+  .marketingsContainer .saving {
     width: 140px;
     height: 180px;
     justify-content: space-around;
   }
 
-  .CircleText {
+  .circleText {
     font-size: 11px;
   }
 }
 
 @media screen and (max-width: 380px) {
   .Container {
-  }
-  .Container .SecondContainer {
-    /* height: 70%; */
+    top: 30px;
   }
 
-  .SecondContainer .SecondChildContainer {
-  }
-  .SecondRightSideContainer {
-    width: 100%;
-    margin-top: 30px;
+  .secondRightSideContainer {
+    padding-left: 10px;
   }
 
-  .SecondRightSideContainer .MarketingsContainer {
+  .secondRightSideContainer .marketingsContainer {
     gap: 10px;
   }
 
-  .MarketingsContainer .saving {
+  .marketingsContainer .saving {
     width: 140px;
     height: 150px;
     gap: 10px;
   }
 
-  .CircleText {
+  .circleText {
     font-size: 9px;
   }
 }
