@@ -46,32 +46,6 @@
   color: #bfbfbf;
 }
 
-@media screen and (max-width: 980px) {
-  .SavingsContainer {
-    width: 160px;
-    height: 200px;
-  }
-
-  .SavingsContainer .SavingsImages {
-    width: 121px;
-  }
-
-  .SavingsContainer .SavingsImages img {
-    width: 34px;
-  }
-
-  .SavingsContainer .textSavings {
-    width: 121px;
-  }
-
-  .textSavings h1 {
-    font-size: 14px;
-  }
-  .textSavings p {
-    font-size: 9px;
-  }
-}
-
 @media screen and (max-width: 768px) {
   .SavingsContainer {
     width: 160px;
@@ -115,6 +89,34 @@
   }
   .textSavings p {
     font-size: 10px;
+    font-weight: 400;
+    line-height: 14px;
+  }
+}
+
+@media screen and (max-width: 380px) {
+  
+  .SavingsContainer {
+    width: 130px;
+    height: 150px;
+  }
+
+  .numberSavings {
+    position: absolute;
+    margin-left: 90px;
+  }
+
+  .SavingsContainer .textSavings {
+    width: 110px;
+  }
+
+  .textSavings h1 {
+    font-size: 10px;
+    font-weight: 700;
+    line-height: 14px;
+  }
+  .textSavings p {
+    font-size: 8px;
     font-weight: 400;
     line-height: 14px;
   }

@@ -138,7 +138,7 @@
   }
 }
 
-@media screen and (max-width: 980px) {
+@media screen and (max-width: 1020px) {
   .smm,
   .solidity,
   .uxUi,
@@ -157,21 +157,22 @@
   }
 
   .uxUi {
-    left: 180px;
-    top: 300px;
+    left: 280px;
+    top: 270px;
   }
   .smm {
-    left: 5;
-    top: 287px;
+    left: 40px;
+    top: 230px;
   }
 
   .solidity {
-    top: 160px;
-    left: 0;
+    top: 50px;
+    left: 20px;
   }
 
   .web {
-    left: 185px;
+    top: 100px;
+    left: 290px;
   }
 }
 

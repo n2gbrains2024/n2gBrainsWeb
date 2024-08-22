@@ -87,12 +87,17 @@
 }
 
 @media screen and (max-width: 980px) {
+  .firstLeftSideContainer {
+    width: 80%;
+    text-align: center;
+  }
   .firstLeftSideContainer p {
-    font-size: 17px;
+    font-size: 28px;
+    line-height: 32px;
   }
 
   .firstLeftSideContainer h1 {
-    font-size: 35px;
+    font-size: 40px;
   }
 
   .firstLeftSideContainer button {
@@ -101,11 +106,14 @@
   .firstLeftSideContainer .choices {
     margin-top: 40px;
   }
+
+  .firstLeftSideContainer .choices {
+    display: none;
+  }
 }
 
 @media screen and (max-width: 768px) {
   .firstLeftSideContainer {
-    width: 400px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -117,17 +125,14 @@
   }
 
   .firstLeftSideContainer p {
-    font-size: 20px;
+    font-size: 17px;
+    line-height: 22px;
   }
 
   .firstLeftSideContainer button {
     width: 220px;
     height: 5vh;
     font-size: 12px;
-  }
-
-  .firstLeftSideContainer .choices {
-    display: none;
   }
 }
 
@@ -163,5 +168,31 @@
     height: 32px;
     background: linear-gradient(to left, #0132c6, #9747ff, #fa550c);
     margin-top: 20px;
+  }
+}
+
+@media screen and (max-width: 380px) {
+  .firstLeftSideContainer {
+    width: 274px;
+  }
+
+  .firstLeftSideContainer p {
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 15px;
+    margin-top: 10px;
+  }
+
+  .firstLeftSideContainer h1 {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 30px;
+  }
+
+  .firstLeftSideContainer button {
+    width: 142px;
+    height: 25px;
+    background: linear-gradient(to left, #0132c6, #9747ff, #fa550c);
+    margin-top: 10px;
   }
 }
