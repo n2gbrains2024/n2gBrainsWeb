@@ -6,7 +6,6 @@ import Contact from "../../ui/Contact/Contact";
 import We from "../We/We.jsx";
 import BigCard from "../../components/BigCard/BigCard.jsx";
 import LandingComponent from "../../components/LandingComponent/LandingComponent.jsx";
-import Students from "../Students/Students.jsx";
 import Feedbacks from "../Feedbacks/Feedbacks.jsx";
 import Footer from "../Footer/Footer.jsx";
 import Courses from "../Courses/Courses.jsx";
@@ -21,7 +20,6 @@ function Main() {
       <BlackComponent />
       <Services />
       <Contact />
-      {/* <Students /> */}
       <Feedbacks />
       <We />
       <div className={mainStyles.footerLine}></div>
