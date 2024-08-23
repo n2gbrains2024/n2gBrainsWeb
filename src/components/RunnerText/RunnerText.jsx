@@ -12,8 +12,8 @@ function RunnerText() {
     arrows: false,
     autoPlaySpeed: 20,
     customTransition: "all 2000ms linear",
-    containerClass: "runnerTextSlider",
-    itemClass: "item",
+    containerClass: styles.runnerTextSlider,
+    itemClass: styles.item,
     transitionDuration: 2000,
     pauseOnHover: false,
     responsive: {

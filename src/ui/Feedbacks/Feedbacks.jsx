@@ -12,8 +12,8 @@ function Feedbacks() {
     autoPlay: true,
     showDots: false,
     arrows: false,
-    containerClass: "feedbacksSlider",
-    itemClass: "item",
+    containerClass: styles.feedbacksSlider,
+    itemClass: styles.item,
     autoPlaySpeed: 300,
     transitionDuration: 1000,
     responsive: {

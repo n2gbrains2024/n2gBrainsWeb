@@ -1,7 +1,6 @@
 import mainStyles from "./Main.module.css";
 import RunnerText from "../../components/RunnerText/RunnerText.jsx";
 import BlackComponent from "../BlackComponent/BlackComponent.jsx";
-import Services from "../Services/Services.jsx";
 import Contact from "../../ui/Contact/Contact";
 import We from "../We/We.jsx";
 import BigCard from "../../components/BigCard/BigCard.jsx";
@@ -19,9 +18,9 @@ function Main() {
       <RunnerText />
       <Courses />
       <BlackComponent />
-      <Services />
-      <Contact />
+      {/* <Services /> */}
       <MainServices />
+      <Contact />
       <Feedbacks />
       <We />
       <div className={mainStyles.footerLine}></div>

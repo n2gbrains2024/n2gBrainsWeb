@@ -38,6 +38,17 @@
   right: 0;
   box-shadow: -10px 0px 100px 120px #f6f6f6;
 }
+.feedbacksSlider {
+  width: 125%;
+  height: 350px;
+  position: relative;
+  left: -12.5%;
+}
+.item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
 @media screen and (max-width: 850px) {
   .container h1 {
@@ -62,6 +73,10 @@
   .feedbacks {
     margin-top: 10px;
   }
+  .feedbacksSlider {
+    width: 200%;
+    left: -50%;
+  }
 }
 @media screen and (max-width: 500px) {
   .whiteShadow {
@@ -75,6 +90,10 @@
   }
   .feedbacks {
     margin-top: -20px;
+  }
+  .feedbacksSlider {
+    width: 240%;
+    left: -70%;
   }
 }
 @media screen and (max-width: 420px) {
@@ -96,8 +115,20 @@
     max-height: 300px;
   }
 }
+@media screen and (max-width: 350px) {
+  .feedbacksSlider {
+    width: 260%;
+    left: -80%;
+  }
+}
 @media screen and (max-width: 310px) {
   .container {
     transform: scale(0.8);
+  }
+}
+@media screen and (max-width: 305px) {
+  .feedbacksSlider {
+    width: 300%;
+    left: -100%;
   }
 }
