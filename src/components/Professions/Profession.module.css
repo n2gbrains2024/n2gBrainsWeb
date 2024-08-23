@@ -139,40 +139,37 @@
 }
 
 @media screen and (max-width: 1020px) {
-  .smm,
-  .solidity,
   .uxUi,
-  .web {
-    font-size: 11px;
-  }
-  .web h1 {
-    font-size: 11px;
-  }
-
-  .smm p,
-  .solidity p,
-  .uxUi p,
-  .web p {
-    font-size: 11px;
-  }
-
-  .uxUi {
-    left: 280px;
-    top: 270px;
-  }
+  .solidity,
+  .web,
   .smm {
-    left: 40px;
-    top: 230px;
+    font-size: 12px;
+  }
+  .web {
+    font-size: 12px;
   }
 
   .solidity {
-    top: 50px;
-    left: 20px;
+    top: 20px;
+    left: 70px;
+  }
+  .web {
+    left: 295px;
+    top: 45px;
+  }
+  .smm {
+    top: 170px;
+    left: 60px;
+    transform: rotate(-35deg);
   }
 
-  .web {
-    top: 100px;
-    left: 290px;
+  .uxUi {
+    top: 190px;
+    left: 280px;
+  }
+
+  .smm > * {
+    transform: rotate(35deg);
   }
 }
 
@@ -189,21 +186,21 @@
 
   .solidity {
     top: 20px;
-    left: 50px;
+    left: 80px;
   }
   .web {
-    left: 260px;
-    top: 65px;
+    left: 310px;
+    top: 55px;
   }
   .smm {
-    top: 165px;
-    left: 30px;
+    top: 170px;
+    left: 70px;
     transform: rotate(-35deg);
   }
 
   .uxUi {
     top: 200px;
-    left: 225px;
+    left: 285px;
   }
 
   .smm > * {
@@ -217,8 +214,8 @@
   }
   .smm {
     left: 2px;
-    top: 160px;
-    transform: rotate(-45deg);
+    top: 153px;
+    transform: rotate(-35deg);
   }
   .web {
     left: 190px;

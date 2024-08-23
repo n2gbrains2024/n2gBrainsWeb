@@ -39,7 +39,7 @@ const Studying = () => {
 
           <div className={styles.firstRightSideContainer}>
             <div className={styles.professions}>
-              <section className={styles.ArowwImagesContainer}>
+              <section className={styles.arrowImagesContainer}>
                 <img src={arow} alt="aroImages" />
               </section>
               {ProfessionsArr.map((profession, index) => {

@@ -35,23 +35,23 @@ function WebDeveloping() {
 
   return (
     <section className={styles.Container}>
-      <div className={styles.SecondContainer}>
-        <div className={styles.SecondChildContainer}>
+      <div className={styles.secondContainer}>
+        <div className={styles.secondChildContainer}>
           <ServicesFirstLeftSide
             buttonText="Կապ մեզ հետ"
             title="Կայքերի պատրաստում"
             scroll={50}
             description="Մենք համոզված ենք․ որ կարող ենք գերազանցել  սպասելիքները։ Վստահեք Ձեր տարբերվող և ֆունկցիոնալ WEB կայքը մեր՝ աշխատանքին նվիրված թիմին։"
           />
-          <div className={styles.SecondRightSideContainer}>
-            <div className={styles.MarketingsContainer}>
+          <div className={styles.secondRightSideContainer}>
+            <div className={styles.marketingsContainer}>
               <div className={styles.saving}>
                 <div className={styles.savingCircleContainer}>
-                  <img src={GradientSircle} alt="" />
+                  <img src={GradientSircle} alt="gradientSircleImg" />
                   <p className={styles.prcent}>+30%</p>
-                  <p className={styles.CircleSaving}>խնայում</p>
+                  <p className={styles.circleSaving}>խնայում</p>
                 </div>
-                <span className={styles.CircleText}>
+                <span className={styles.circleText}>
                   Դուք կարող եք խնայել  մինչև 30% ձեր բյուջեից
                 </span>
               </div>
