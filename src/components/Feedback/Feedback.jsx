@@ -1,9 +1,9 @@
 import styles from "./Feedback.module.css";
 import marks from "../../assets/marks.svg";
 
-function Feedback({ comment, user, courseTitle, image, key }) {
+function Feedback({ comment, user, courseTitle, image, id }) {
   return (
-    <div className={styles.container} key={key}>
+    <div className={styles.container} key={id}>
       <img alt="" src={marks} className={styles.topMarks} />
       <div>
         <p>{comment}</p>

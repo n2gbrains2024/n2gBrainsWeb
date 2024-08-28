@@ -25,3 +25,19 @@
   line-height: 28px;
   text-align: center;
 }
+.infoButton {
+  width: 46px;
+  height: 46px;
+  background: #0132c6;
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  top: 23px;
+  opacity: 0.3;
+}
+.active {
+  opacity: 1;
+  cursor: pointer;
+}

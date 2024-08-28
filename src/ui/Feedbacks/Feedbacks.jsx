@@ -100,7 +100,7 @@ function Feedbacks() {
                 user={feedback.user}
                 courseTitle={feedback.courseTitle}
                 image={feedback.image}
-                key={index}
+                id={index - Math.random()}
               />
             );
           })}

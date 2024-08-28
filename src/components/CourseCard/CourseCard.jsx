@@ -18,7 +18,7 @@ function CourseCard() {
           animateOnce={true}
         >
           <span>Online</span>
-          <div class={styles.titles}>
+          <div className={styles.titles}>
             <h2>Ծրագրավորում</h2>
             <p>Front-End ծրագրավորում սկսնակների համար</p>
           </div>
