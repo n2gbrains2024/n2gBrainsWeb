@@ -1,6 +1,6 @@
 .container {
   width: 100%;
-  height: calc(100vh - 60px);
+  height: calc(100vh - 100px);
   background: #000e39;
   z-index: 3;
   padding: 100px;
@@ -84,7 +84,7 @@
 
 .images {
   width: 40%;
-  height: calc(90vh - 60px);
+  height: calc(90vh - 100px);
   position: relative;
   display: flex;
 }
