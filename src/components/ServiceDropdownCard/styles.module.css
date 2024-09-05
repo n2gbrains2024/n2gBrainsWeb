@@ -1,13 +1,12 @@
 .container {
   width: 380px;
   height: 290px;
-  border-radius: 0px 0px 17px 17px;
+  border-radius: 17px;
   background: #00000080;
   position: absolute;
   margin-left: -100px;
-  top: 100px;
+  top: 80px;
   border: solid 0.5px #656565;
-  border-top: none;
   box-shadow: 0px 0px 15px 0px;
   display: flex;
   flex-direction: column;
@@ -18,13 +17,13 @@
   transform: translateX(-150px);
   animation: fadeIn 300ms 1 forwards;
 }
-.container > div {
+.container > a {
   display: flex;
   align-items: center;
   gap: 20px;
   cursor: pointer;
 }
-.container > div > div {
+.container > a > div {
   width: 70px;
   height: 70px;
   background: gray;
@@ -53,7 +52,7 @@
     height: 200px;
     margin-left: -85px;
   }
-  .container > div > div {
+  .container > a > div {
     width: 40px;
     height: 40px;
   }
@@ -68,13 +67,13 @@
   .container {
     width: 220px;
     height: 170px;
-    top: 70px;
+    top: 60px;
     padding-left: 20px;
     padding-right: 5px;
     margin-left: -50px;
     justify-content: space-evenly;
   }
-  .container > div > div {
+  .container > a > div {
     min-width: 30px;
     max-width: 30px;
     height: 30px;
@@ -85,5 +84,30 @@
   .container p {
     font-size: 12px;
     line-height: 16px;
+  }
+}
+@media screen and (max-width: 750px) {
+  .container {
+    width: 260px;
+    position: relative;
+    margin-left: 20px;
+    top: 10px;
+    background: none;
+    border: none;
+    box-shadow: none;
+    margin-bottom: 20px;
+  }
+  .container > a > div {
+    min-width: 46px;
+    max-width: 46px;
+    height: 46px;
+  }
+  .container img {
+    width: 40px;
+  }
+  .container p {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 24px;
   }
 }

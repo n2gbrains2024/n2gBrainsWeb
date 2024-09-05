@@ -18,7 +18,6 @@ function Main() {
       <RunnerText />
       <Courses />
       <BlackComponent />
-      {/* <Services /> */}
       <MainServices />
       <Contact />
       <Feedbacks />
