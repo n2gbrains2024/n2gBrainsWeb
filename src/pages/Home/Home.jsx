@@ -4,8 +4,8 @@ import Main from "../../ui/Main/Main";
 function Home() {
   return (
     <div>
-      <ScrollRestoration />
-      <Main />
+      {/* <ScrollRestoration /> */}
+      {/* <Main /> */}
     </div>
   );
 }

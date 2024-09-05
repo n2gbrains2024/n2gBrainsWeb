@@ -10,6 +10,7 @@ import closeIcon from "../../assets/close.svg";
 import arrowDown from "../../assets/arrowDown.svg";
 import arrowUp from "../../assets/arrowUp.svg";
 import Login from "../../components/Login/Login";
+import SignUp from "../../components/Register/Register";
 
 function Menu() {
   const [openMenu, setOpenMenu] = useState(false);
@@ -73,9 +74,9 @@ function Menu() {
         {openMenu ? (
           <div className={styles.openedMenu}>
             {showRegister ? (
-              "register"
+              <SignUp setShowLogin={setShowLogin} setShowRegister={setShowRegister}/>
             ) : showLogin ? (
-              <Login setShow={setShowRegister} />
+              <Login setShowRegister={setShowRegister} />
             ) : (
               <div>
                 <div className={styles.mobileMenuLinks}>
