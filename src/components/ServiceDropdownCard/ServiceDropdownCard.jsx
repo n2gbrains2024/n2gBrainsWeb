@@ -2,8 +2,8 @@ import { Link } from "react-router-dom";
 
 import styles from "./styles.module.css";
 import icon1 from "../../assets/education.svg";
-import icon2 from "../../assets/compIcon.svg";
-import icon3 from "../../assets/marketing.svg";
+import icon2 from "../../assets/marketing.svg";
+import icon3 from "../../assets/compIcon.svg";
 
 function ServiceDropdownCard({ onClick }) {
   const pages = [
@@ -13,14 +13,14 @@ function ServiceDropdownCard({ onClick }) {
       to: "/education",
     },
     {
-      image: icon3,
+      image: icon2,
       title: "SMM ծառայություն",
-      to: "/education",
+      to: "/smm",
     },
     {
-      image: icon2,
+      image: icon3,
       title: "WEB կայքերի պատրաստում",
-      to: "/education",
+      to: "/webDeveloping",
     },
   ];
   return (
