@@ -7,7 +7,6 @@ import BigCard from "../../components/BigCard/BigCard.jsx";
 import LandingComponent from "../../components/LandingComponent/LandingComponent.jsx";
 import Feedbacks from "../Feedbacks/Feedbacks.jsx";
 import Footer from "../Footer/Footer.jsx";
-import Courses from "../Courses/Courses.jsx";
 import MainServices from "../MainServices/MainServices.jsx";
 
 function Main() {
@@ -16,7 +15,6 @@ function Main() {
       <LandingComponent />
       <BigCard />
       <RunnerText />
-      <Courses />
       <BlackComponent />
       <MainServices />
       <Contact />

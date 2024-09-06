@@ -1,0 +1,36 @@
+.container {
+  padding-top: 150px;
+}
+.nav {
+  width: 25%;
+  height: 100vh;
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+}
+.nav > h1 {
+  width: 80%;
+  font-size: 27px;
+  font-weight: 700;
+}
+.paths {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  gap: 35px;
+  margin-top: 40px;
+}
+.paths > div {
+  width: 100%;
+  font-size: 20px;
+  font-weight: 400;
+  color: #a4a4a4;
+  display: flex;
+  justify-content: space-between;
+  cursor: pointer;
+}
+.main {
+  width: 75%;
+  margin-left: 25%;
+}

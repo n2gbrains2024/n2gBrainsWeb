@@ -9,7 +9,7 @@ import About from "./pages/About/About.jsx";
 import Education from "./pages/Education/Education.jsx";
 import WebDeveloping from "./pages/WebDeveloping/WebDeveloping.jsx";
 import Smm from "./pages/Smm/Smm.jsx";
-import Courses from "./ui/Courses/Courses.jsx";
+import Courses from "./pages/Courses/Courses.jsx";
 
 function App() {
   return (
