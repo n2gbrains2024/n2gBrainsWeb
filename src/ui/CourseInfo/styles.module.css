@@ -29,11 +29,37 @@
 .container h2 {
   font-size: 24px;
   font-weight: 700;
-  line-height: 24px;
+  line-height: 28px;
 }
 .container p {
   font-size: 20px;
   font-weight: 400;
   line-height: 36px;
   color: #626262;
+}
+
+@media screen and (max-width: 1300px) {
+  .container {
+    padding-left: 80px;
+    padding-right: 80px;
+  }
+}
+@media screen and (max-width: 1080px) {
+  .container {
+    gap: 20px;
+  }
+  .container > h1 {
+    font-size: 28px;
+  }
+  .container h2 {
+    font-size: 18px;
+    line-height: 22px;
+  }
+  .container p {
+    font-size: 16px;
+    line-height: 26px;
+  }
+  .container div {
+    gap: 8px;
+  }
 }

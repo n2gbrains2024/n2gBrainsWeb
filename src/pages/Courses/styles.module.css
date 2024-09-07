@@ -10,12 +10,12 @@
   align-items: end;
 }
 .nav > h1 {
-  width: 80%;
-  font-size: 27px;
+  width: 85%;
+  font-size: 31px;
   font-weight: 700;
 }
 .paths {
-  width: 80%;
+  width: 85%;
   display: flex;
   flex-direction: column;
   gap: 35px;
@@ -23,7 +23,7 @@
 }
 .paths > div {
   width: 100%;
-  font-size: 20px;
+  font-size: 22px;
   font-weight: 400;
   color: #a4a4a4;
   display: flex;
@@ -33,4 +33,26 @@
 .main {
   width: 75%;
   margin-left: 25%;
+}
+
+@media screen and (max-width: 1680px) {
+  .nav > h1 {
+    font-size: 27px;
+  }
+  .paths > div {
+    font-size: 19px;
+  }
+}
+
+@media screen and (max-width: 1500px) {
+  .nav > h1 {
+    width: 90%;
+    font-size: 24px;
+  }
+  .paths {
+    width: 90%;
+  }
+  .paths > div {
+    font-size: 16px;
+  }
 }

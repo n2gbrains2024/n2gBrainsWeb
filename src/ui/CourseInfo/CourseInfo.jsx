@@ -1,3 +1,4 @@
+import ScrollRestoration from "../../helpers/ScrollRestoration.js";
 import styles from "./styles.module.css";
 
 function CourseInfo({
@@ -36,6 +37,7 @@ function CourseInfo({
         <h2>Դասընթացին մասնակցելու առավելությունները</h2>
         <p>{advantages}</p>
       </div>
+      <ScrollRestoration />
     </div>
   );
 }
