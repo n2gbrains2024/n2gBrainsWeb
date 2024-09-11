@@ -1,208 +1,86 @@
 .container {
-  width: 80%;
-  margin-left: 10%;
-}
-.courseCard {
-  width: 100%;
-  height: 415px;
-  background: #f0f0f0;
-  border: solid 1px #00071c;
+  height: 480px;
+  border: solid #525252 1px;
   border-radius: 20px;
-  margin-top: 50px;
-  box-shadow: 8px 8px #00071c;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
-.courseInfo {
-  width: 70%;
-  height: 80%;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  padding: 30px;
-  padding-left: 50px;
+  align-items: center;
+  justify-content: end;
 }
 
-.courseInfo > span {
-  width: 97px;
-  height: 30px;
-  border-radius: 15.5px;
-  background: #9df49b;
-  color: #327b30;
-  border: solid 1px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  animation: pulse 1.5s infinite;
-}
-@keyframes pulse {
-  50% {
-    transform: scale(1.1);
-  }
-  100% {
-    transform: scale(1);
-  }
-}
-.courseInfo h2 {
-  font-size: 32px;
+.textCont h2 {
   font-weight: 700;
-  line-height: 40px;
-  color: #000e39;
+  font-size: 35px;
+  line-height: 44px;
+}
+.textCont p {
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 24px;
+  color: #6d6d6d;
 }
 
-.courseInfo p {
-  font-size: 26px;
-  font-weight: 400;
-  color: #000e39;
-}
-
-.info {
-  height: 82px;
+.childContainer {
+  max-width: 85%;
+  height: 90%;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
 }
-
-.info > span {
+.textCont {
   display: flex;
-  align-items: center;
-  font-size: 18px;
-  color: #a4a4a4;
-}
-
-.info > span > span {
-  margin-left: 10px;
-}
-
-.narek {
-  border-radius: 0px 0px 20px 0px;
-  margin-top: 15px;
-  margin-left: 5px;
+  flex-direction: column;
+  gap: 5px;
+  text-align: start;
   position: relative;
+  top: -10px;
+  z-index: 3;
 }
-
-.courseInfo button {
-  width: 114px;
-  height: 24px;
-  border-radius: 20px;
-  border: none;
-  color: white;
-  background: #0132c6;
-  font-size: 12px;
+.textCont a {
+  font-size: 16px;
   font-weight: 700;
+  color: white;
 }
-
-@media screen and (max-width: 1200px) {
+@media screen and (min-width: 1790px) and (max-width: 2600px) {
   .container {
-    width: 90%;
-    margin-left: 5%;
-  }
-  .courseInfo {
-    width: 90%;
-    height: 90%;
-  }
-  .titles {
-    width: 120%;
-  }
-  .courseInfo h2 {
-    font-size: 28px;
-  }
-  .courseInfo p {
-    font-size: 20px;
-  }
-  .info > span {
-    font-size: 16px;
-  }
-  .narek {
-    width: 320px;
-    margin-top: 90px;
-    left: 1px;
+    height: 600px;
   }
 }
 
-@media screen and (max-width: 780px) {
-  .courseCard {
-    height: 350px;
+@media screen and (max-width: 1290px) {
+  .container {
+    height: 430px;
   }
-  .courseInfo {
-    width: 60%;
-    padding: 20px;
-    padding-left: 40px;
+}
+
+@media screen and (max-width: 1024px) {
+  .container {
+    height: 370px;
   }
-  .courseInfo h2 {
-    font-size: 24px;
+  .textCont h2 {
+    font-size: 22px;
+    line-height: 27px;
   }
-  .courseInfo p {
+  .textCont p {
+    font-size: 12px;
+    line-height: 18px;
+  }
+  .textCont a {
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 870px) {
+  .container {
+    height: 300px;
+  }
+  .textCont h2 {
     font-size: 18px;
   }
-  .info > span {
-    font-size: 14px;
+  .textCont p {
+    font-size: 11px;
+    line-height: 15px;
   }
-  .info img {
-    width: 20px;
-  }
-  .narek {
-    width: 280px;
-    margin-top: 66px;
-    left: 1px;
-  }
-}
-
-@media screen and (max-width: 660px) {
-  .container {
-    width: 300px;
-    height: 435px;
-    margin-left: calc(50% - 150px);
-    margin-top: 40px;
-  }
-  .courseCard {
-    height: 100%;
-    margin: 0;
-    flex-direction: column-reverse;
-    justify-content: space-evenly;
-    padding: 0;
-  }
-  .narek {
-    width: 237px;
-    margin-top: -10px;
-    border-radius: 0px;
-  }
-  .courseInfo {
-    width: 235px;
-    height: 45%;
-    margin-top: -20px;
-    padding: 0;
-    justify-content: space-evenly;
-  }
-  .titles {
-    width: 100%;
-  }
-  .courseInfo h2 {
-    font-size: 22px;
-    line-height: 28px;
-  }
-  .courseInfo p {
-    font-size: 14px;
-  }
-  .info {
-    height: 60px;
-  }
-  .info img {
-    width: 15px;
-  }
-  .info > span {
-    font-size: 10px;
-  }
-  .courseInfo > span {
-    width: 82px;
-    height: 24px;
-    font-size: 14px;
-    position: absolute;
-    bottom: 7%;
-  }
-  .courseInfo button {
-    margin-left: calc(100% - 114px);
+  .textCont a {
+    font-size: 12px;
   }
 }
