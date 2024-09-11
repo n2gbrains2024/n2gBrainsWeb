@@ -1,7 +1,7 @@
 .container {
-  min-height: 200vh;
   background: #000;
   color: #fff;
+  padding-bottom: 200px;
 }
 .team {
   width: 100%;
@@ -54,6 +54,246 @@
 }
 
 .infoContainer {
+  width: 100%;
   position: relative;
   top: 100px;
+  display: flex;
+  justify-content: center;
+}
+
+.infoChildContainer {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: space-between;
+}
+
+.textContainer,
+.cards {
+  max-width: 100%;
+  margin-top: 20px;
+}
+
+.cards {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.cards > * {
+  margin-top: 20px;
+}
+
+.textContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.textContainer h1 {
+  color: #f6f6f6;
+}
+.textContainer > p {
+  color: #6d6d6d;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 28px;
+  width: 80%;
+}
+
+.infoCont {
+  max-width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.infoCont > * {
+  position: absolute;
+}
+
+.infoCont {
+  display: flex;
+}
+
+.infoCont > * {
+  bottom: 0;
+  width: 50%;
+}
+
+.infoCont .infoImg {
+  z-index: 1;
+}
+
+.infoCont .infoImg2 {
+  z-index: 2;
+  margin-left: 25%;
+}
+
+.infoCont .infoImg3 {
+  z-index: 3;
+  margin-left: 50%;
+}
+
+.frontEndCont {
+  max-width: 100%;
+  margin-top: 10%;
+  height: 60%;
+  position: relative;
+  display: flex;
+}
+.frontEndCont > * {
+  position: absolute;
+}
+
+.frontEndImg {
+  margin-top: 10%;
+  margin-left: 0%;
+  width: 60%;
+}
+
+.frontEndImg2 {
+  margin-left: 55%;
+  margin-top: 25%;
+  width: 40%;
+}
+
+.frontEndImg3 {
+  width: 20%;
+  margin-left: 75%;
+  margin-top: 0%;
+}
+
+.frontEndCont2 {
+  max-width: 100%;
+  height: 100%;
+  display: flex;
+  position: relative;
+}
+
+.frontEndCont2 > * {
+  position: absolute;
+  bottom: 0;
+}
+.frontEndCont2 span {
+  margin-left: 48%;
+  z-index: 4;
+  font-size: 38px;
+  font-weight: 700;
+}
+
+.frontEnd2Img {
+  width: 50%;
+  margin-left: 5%;
+  z-index: 1;
+}
+
+.frontEnd2Img2 {
+  width: 40%;
+  margin-left: 30%;
+  z-index: 2;
+}
+.frontEnd2Img3 {
+  width: 50%;
+  margin-left: 45%;
+  z-index: 1;
+}
+
+.fullStackCont {
+  max-width: 100%;
+  height: 100%;
+  display: flex;
+  position: relative;
+}
+.fullStackCont > * {
+  position: absolute;
+}
+
+.fullStackImg {
+  width: 15%;
+  bottom: 0;
+  z-index: 2;
+  margin-left: 16%;
+}
+.fullStackImg2 {
+  width: 65%;
+  bottom: 0;
+  z-index: 1;
+  margin-left: 20%;
+}
+.fullStackImg3 {
+  width: 22%;
+  z-index: 2;
+  margin-left: 71%;
+  bottom: 60%;
+}
+
+.pythonCont {
+  max-width: 100%;
+  height: 100%;
+  display: flex;
+  position: relative;
+}
+
+.pythonCont > * {
+  position: absolute;
+}
+
+.pythonImg {
+  width: 33%;
+  margin-left: 30%;
+  bottom: 15%;
+}
+
+.pythonImg2 {
+  width: 33%;
+  margin-left: 53%;
+  bottom: 0;
+}
+
+.scratchCont {
+  max-width: 100%;
+  height: 100%;
+  display: flex;
+  position: relative;
+}
+
+.scratchCont > * {
+  position: absolute;
+  bottom: 0;
+}
+
+.scratchImg {
+  width: 80%;
+  margin-left: 10%;
+}
+
+.smmCont {
+  max-width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+.smmCont > * {
+  position: absolute;
+}
+.smmImg {
+  width: 50%;
+  margin-left: 11.5%;
+  margin-top: -8%;
+}
+.smmImg2 {
+  width: 35%;
+  margin-left: 48%;
+  margin-top: 4%;
+}
+
+@media screen and (max-width: 870px) {
+  .textContainer > p {
+    font-size: 18px;
+    line-height: 23px;
+    width: 100%;
+  }
 }
