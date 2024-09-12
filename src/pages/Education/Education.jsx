@@ -1,9 +1,10 @@
 import styles from "./styles.module.css";
+import cardStyles from "../../components/CourseCard/styles.module.css";
 import teamPng from "../../assets/team.png";
 import CourseCard from "../../components/CourseCard/CourseCard";
-import aplication from "../../assets/aplication.svg";
+import application from "../../assets/aplication.svg";
 import button from "../../assets/button.svg";
-import rectagle from "../../assets/rectagle.svg";
+import rectangle from "../../assets/rectagle.svg";
 import Ai from "../../assets/Ai.svg";
 import Ps from "../../assets/Ps.svg";
 import icons from "../../assets/icons.svg";
@@ -26,11 +27,12 @@ function Education() {
       description:
         "Nkaragrutyuumn savljsngvljsbgla v End-to-End Knowledge: The course provides a holistic understanding of",
       width: "59%",
+      className: "uiux",
       children: (
-        <div className={styles.infoCont}>
-          <img className={styles.infoImg} src={aplication} alt="infoImg" />
-          <img className={styles.infoImg2} src={button} alt="infoImg2" />
-          <img className={styles.infoImg3} src={rectagle} alt="infoImg3" />
+        <div className={cardStyles.uiuxCont}>
+          <img className={cardStyles.infoImg} src={application} alt="" />
+          <img className={cardStyles.infoImg2} src={button} alt="" />
+          <img className={cardStyles.infoImg3} src={rectangle} alt="" />
         </div>
       ),
     },
@@ -39,11 +41,12 @@ function Education() {
       description:
         "Nkaragrutyuumn savljsngvljsbgla v End-to-End Knowledge: The course provides a",
       width: "39%",
+      className: "frontEnd",
       children: (
-        <div className={styles.frontEndCont}>
-          <img className={styles.frontEndImg} src={Ps} alt="frontEndImg" />
-          <img className={styles.frontEndImg2} src={Ai} alt="frontEndImg2" />
-          <img className={styles.frontEndImg3} src={icons} alt="frontEndImg3" />
+        <div className={cardStyles.frontEndCont}>
+          <img className={cardStyles.frontEndImg} src={Ps} alt="" />
+          <img className={cardStyles.frontEndImg2} src={Ai} alt="" />
+          <img className={cardStyles.frontEndImg3} src={icons} alt="" />
         </div>
       ),
     },
@@ -52,11 +55,12 @@ function Education() {
       description:
         "Nkaragrutyuumn savljsngvljsbgla v End-to-End Knowledge: The course provides a ",
       width: "39%",
+      className: "frontEnd2",
       children: (
-        <div className={styles.frontEndCont2}>
-          <img className={styles.frontEnd2Img} src={HTML} alt="frontEnd2Img" />
-          <img className={styles.frontEnd2Img2} src={JS} alt="frontEnd2Img2" />
-          <img className={styles.frontEnd2Img3} src={CSS} alt="frontEnd2Img3" />
+        <div className={cardStyles.frontEndCont2}>
+          <img className={cardStyles.frontEnd2Img} src={HTML} alt="" />
+          <img className={cardStyles.frontEnd2Img2} src={JS} alt="" />
+          <img className={cardStyles.frontEnd2Img3} src={CSS} alt="" />
         </div>
       ),
     },
@@ -65,19 +69,16 @@ function Education() {
       description:
         "Nkaragrutyuumn savljsngvljsbgla v End-to-End Knowledge: The course provides a holistic understanding of both front-end and back-end",
       width: "59%",
+      className: "fullStack",
       children: (
-        <div className={styles.fullStackCont}>
-          <img className={styles.fullStackImg} src={Icon} alt="fullStackImg" />
+        <div className={cardStyles.fullStackCont}>
+          <img className={cardStyles.fullStackImg} src={Icon} alt="" />
           <img
-            className={styles.fullStackImg2}
+            className={cardStyles.fullStackImg2}
             src={onlineFullStack}
-            alt="fullStackImg2"
+            alt=""
           />
-          <img
-            className={styles.fullStackImg3}
-            src={Spread}
-            alt="fullStackImg3"
-          />
+          <img className={cardStyles.fullStackImg3} src={Spread} alt="" />
         </div>
       ),
     },
@@ -86,14 +87,15 @@ function Education() {
       description:
         "Nkaragrutyuumn savljsngvljsbgla v End-to-End Knowledge: The course provides a holistic understanding of both front-end and back-end",
       width: "59%",
+      className: "python",
       children: (
-        <div className={styles.pythonCont}>
-          <img className={styles.pythonImg} src={PythonBlue} alt="pythonImg" />
+        <div className={cardStyles.pythonCont}>
           <img
-            className={styles.pythonImg2}
-            src={PythonGray}
-            alt="pythonImg2"
+            className={cardStyles.pythonImg}
+            src={PythonBlue}
+            alt="pythonImg"
           />
+          <img className={cardStyles.pythonImg2} src={PythonGray} alt="" />
         </div>
       ),
     },
@@ -102,9 +104,10 @@ function Education() {
       description:
         "Nkaragrutyuumn savljsngvljsbgla v End-to-End Knowledge: The course provides a",
       width: "39%",
+      className: "scratch",
       children: (
-        <div className={styles.scratchCont}>
-          <img className={styles.scratchImg} src={Cat} alt="scratchImg" />
+        <div className={cardStyles.scratchCont}>
+          <img className={cardStyles.scratchImg} src={Cat} alt="scratchImg" />
         </div>
       ),
     },
@@ -113,10 +116,15 @@ function Education() {
       description:
         "Nkaragrutyuumn savljsngvljsbgla v End-to-End Knowledge: The course provides a holistic understanding of",
       width: "59%",
+      className: "smm",
       children: (
-        <div className={styles.smmCont}>
-          <img className={styles.smmImg} src={n2gInstagram} alt="smmImg" />
-          <img className={styles.smmImg2} src={ecowoodhouse8} alt="smmImg2" />
+        <div className={cardStyles.smmCont}>
+          <img className={cardStyles.smmImg} src={n2gInstagram} alt="smmImg" />
+          <img
+            className={cardStyles.smmImg2}
+            src={ecowoodhouse8}
+            alt="smmImg2"
+          />
         </div>
       ),
     },
@@ -146,6 +154,7 @@ function Education() {
                   description={card.description}
                   key={i}
                   width={card.width}
+                  className={card.className}
                 >
                   {card.children}
                 </CourseCard>

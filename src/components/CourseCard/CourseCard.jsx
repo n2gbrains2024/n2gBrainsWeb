@@ -1,9 +1,12 @@
 import styles from "./styles.module.css";
 import { Link } from "react-router-dom";
 
-function CourseCard({ title, description, children, width }) {
+function CourseCard({ title, description, children, width, className }) {
   return (
-    <div className={styles.container} style={{ width: width }}>
+    <div
+      className={`${styles.container} ${styles[className]}`}
+      style={{ width: width }}
+    >
       <div className={styles.childContainer}>
         <div className={styles.textCont}>
           <h2>{title}</h2>
@@ -12,6 +15,7 @@ function CourseCard({ title, description, children, width }) {
         </div>
         {children}
       </div>
+      <div className={styles.shadow}></div>
     </div>
   );
 }
