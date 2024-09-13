@@ -55,8 +55,7 @@
 
 .infoContainer {
   width: 100%;
-  position: relative;
-  top: 100px;
+  margin-top: 200px;
   display: flex;
   justify-content: center;
 }
@@ -71,7 +70,6 @@
 
 .textContainer,
 .cards {
-  max-width: 100%;
   margin-top: 20px;
 }
 
@@ -93,6 +91,9 @@
 }
 
 .textContainer h1 {
+  font-size: 64px;
+  font-weight: 700;
+  line-height: 74px;
   color: #f6f6f6;
 }
 .textContainer > p {
