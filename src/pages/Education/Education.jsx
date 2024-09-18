@@ -163,6 +163,7 @@ function Education() {
           </div>
         </div>
       </div>
+      <div className={styles.webDeveloper}></div>
     </div>
   );
 }
