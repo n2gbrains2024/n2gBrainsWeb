@@ -19,6 +19,7 @@ import PythonGray from "../../assets/PythonGray.svg";
 import Cat from "../../assets/Cat.svg";
 import n2gInstagram from "../../assets/n2gInstagram.svg";
 import ecowoodhouse8 from "../../assets/ecowoodhouse8.svg";
+import Footer from "../../ui/Footer/Footer";
 
 function Education() {
   const cards = [

@@ -13,24 +13,20 @@ function Footer() {
     <div className={style.container}>
       <div className={style.information}>
         <h2>Տեղեկություն</h2>
-        <p>Դասընթացներ</p>
-        <p>SMM ծառայություն</p>
-        <p>WEB կայքերի պատրաստում</p>
-        <p>Նվեր քարտ</p>
+        <Link to="">Դասընթացներ</Link>
+        <Link to="">SMM ծառայություն</Link>
+        <Link to="">WEB կայքերի պատրաստում</Link>
+        <Link to="">Նվեր քարտ</Link>
       </div>
       <div className={style.contacts}>
         <h2>Կոնտակտներ</h2>
-        <a href="tel:+37496691949">
-          <p>
-            <img src={phone} /> (096) 694919
-          </p>
+        <a href="tel:+37496691949" target="_blank">
+          <img src={phone} /> (096) 694919
         </a>
-        <a href="mailto:n2gbrains@gmail.com">
-          <p>
-            <img src={mailIcon} /> n2gbrains@gmail.com
-          </p>
+        <a href="mailto:n2gbrains@gmail.com" target="_blank">
+          <img src={mailIcon} /> n2gbrains@gmail.com
         </a>
-        <a>
+        <a href="https://maps.app.goo.gl/9sXkCXESax4VMMf97" target="_blank">
           <img className={style.cartaSvg} src={mapSvg} alt="" />
           Կոմիտաս Վ․Վաղարշյան 21
         </a>
