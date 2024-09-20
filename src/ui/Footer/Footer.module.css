@@ -1,162 +1,145 @@
 .container {
+  height: 294px;
+  border: solid white;
   width: 100%;
-  height: 280px;
   display: flex;
-  flex-direction: column;
-  justify-content: end;
-  margin-top: 20px;
-}
-.footer p,
-a {
-  color: #fff;
-  font-size: 14px;
-  font-weight: 400;
-  font-weight: lighter;
-}
-
-.footer h4,
-h5 {
-  color: #fff;
-}
-
-.footer {
-  width: 100%;
-  height: 100%;
-  background: #00071c;
-  display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
   align-items: center;
-  padding: 0px 200px 0px 200px;
+  gap: 20px;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
 }
 
-.firstContainer {
-  width: 30%;
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-}
-
-.firstContainer h4 {
-  font-size: 28px;
-  line-height: 34px;
-}
-
-.firstContainer span {
-  color: #f2f2f2;
-  font-size: 14px;
+.container div p,
+a {
+  font-family: Arial;
+  font-size: 24px;
   font-weight: 400;
-  line-height: 18.34px;
+  line-height: 24px;
+  text-align: left;
+  color: #898989;
 }
 
-.firstContainer img {
-  width: 70px;
-  height: 65px;
-  margin-left: -10px;
-}
-
-.secondContainer {
-  width: 60%;
-  display: flex;
-  justify-content: space-between;
-}
-
-.secondContainer div {
+.container > div {
   display: flex;
   flex-direction: column;
-  gap: 5px;
-}
-
-.secondContainer h5 {
-  font-size: 18px;
-}
-
-.secondContainer p {
-  display: flex;
   gap: 10px;
+  height: 180px;
 }
 
-.textContainer a {
-  margin-top: 5px;
-  position: relative;
-  top: 5px;
-}
-
-.contactsContainer h5 {
+.information h2 {
+  font-family: Arial;
+  font-size: 24px;
   font-weight: 700;
+  line-height: 34px;
+  text-align: left;
 }
 
-.contactsContainer p {
-  margin-top: 7px;
-  position: relative;
-  top: 5px;
+.contacts h2,
+.socInfo h2 {
+  font-family: Arial;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 27.6px;
+  text-align: left;
 }
 
-.contactsContainer .cartaSvg {
-  margin-left: 2.5px;
-}
-
-.socialContainer h5 {
-  font-size: 18px;
-  line-height: 21px;
-  font-weight: lighter;
+.contacts a,
+p {
+  display: flex;
 }
 
 .socialContactsContainer {
-  width: 104px;
-  flex-direction: row !important;
+  width: 95%;
+  display: flex;
   justify-content: space-between;
-  margin-top: 15px;
+  align-items: center;
+}
+.socialContactsContainer a > img {
+  width: 30px;
+  height: 30px;
+}
+.socialContactsContainer .facebookImg {
+  width: 80px;
+  height: 35px;
+}
+.socialContactsContainer .linkedin {
+  width: 40px;
+  height: 35px;
 }
 
-.socialContactsContainer img {
-  width: 17px;
-}
-
-@media screen and (max-width: 1300px) {
-  .footer {
-    padding: 0px 100px 0px 100px;
+@media screen and (max-width: 1290px) {
+  .information h2,
+  .contacts h2,
+  .socInfo h2 {
+    font-size: 23px;
   }
-}
-@media screen and (max-width: 1060px) {
-  .container {
-    height: 230px;
-  }
-  .footer {
-    padding: 0px 50px 0px 50px;
-  }
-  .footer p,
+  .container .information > p,
+  .container .contacts > p,
   a {
-    font-size: 12px;
-  }
-  .firstContainer h4 {
-    font-size: 24px;
-    line-height: 30px;
+    font-size: 22px;
+    line-height: 20px;
   }
 
-  .firstContainer span {
-    font-size: 12px;
-    line-height: 15px;
+  .socialContactsContainer a > img {
+    width: 40px;
+    height: 30px;
   }
-  .secondContainer h5 {
+  .socialContactsContainer .facebookImg {
+    width: 50px;
+    height: 35px;
+  }
+  .socialContactsContainer .linkedin {
+    width: 40px;
+    height: 35px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .information h2,
+  .contacts h2,
+  .socInfo h2 {
+    font-size: 18px;
+  }
+  .container .information p {
+    font-size: 18px;
+    line-height: 18px;
+  }
+  .container .contacts p,
+  a {
+    font-size: 18px;
+    line-height: 25px;
+  }
+
+  .socialContactsContainer a > img {
+    width: 30px;
+    height: 25px;
+  }
+  .socialContactsContainer .facebookImg {
+    width: 40px;
+    height: 30px;
+  }
+  .socialContactsContainer .linkedin {
+    width: 30px;
+    height: 30px;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .information h2,
+  .contacts h2,
+  .socInfo h2 {
+    font-size: 18px;
+  }
+  .container .information > p,
+  .container .contacts > p,
+  a {
     font-size: 16px;
-  }
-  .contactsContainer p {
-    margin-top: 4px;
-  }
-  .textContainer a {
-    margin-top: 3px;
+    line-height: 17px;
   }
 }
 
-@media screen and (max-width: 880px) {
-  .container {
-    height: 210px;
-  }
-  .footer {
-    padding: 25px;
-  }
-}
-@media screen and (max-width: 780px) {
+@media screen and (max-width: 750px) {
   .container {
     display: none;
   }
