@@ -7,6 +7,7 @@ import Education from "./pages/Education/Education.jsx";
 import WebDeveloping from "./pages/WebDeveloping/WebDeveloping.jsx";
 import Smm from "./pages/Smm/Smm.jsx";
 import Courses from "./pages/Courses/Courses.jsx";
+import CourseRegistration from "./ui/CourseRegistration/CourseRegistration.jsx";
 
 const routes = [
   {
@@ -44,6 +45,10 @@ const routes = [
   {
     path: "/courses",
     element: <Courses />,
+  },
+  {
+    path: "/courseRegistration",
+    element: <CourseRegistration />,
   },
 ];
 
