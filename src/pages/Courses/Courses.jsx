@@ -1,11 +1,10 @@
-import { useState } from "react";
 import CourseInfo from "../../ui/CourseInfo/CourseInfo";
 import courseInfos from "./data.js";
 import iconRight from "../../assets/iconRight.svg";
 import styles from "./styles.module.css";
+import { Link } from "react-router-dom";
 
-function Courses() {
-  const [info, setInfo] = useState(courseInfos[0]);
+function Courses({ index }) {
   return (
     <div className={styles.container}>
       <div className={styles.nav}>
@@ -13,20 +12,17 @@ function Courses() {
         <div className={styles.paths}>
           {courseInfos.map((courseInfo, i) => {
             return (
-              <div
-                key={i}
-                onClick={() => {
-                  setInfo(courseInfo);
-                }}
-              >
+              <Link key={i} to={`../courses/${courseInfo.path}`}>
                 {courseInfo.name}
                 <img src={iconRight} alt="" />
-              </div>
+              </Link>
             );
           })}
         </div>
       </div>
-      <div className={styles.main}>{<CourseInfo {...info} />}</div>
+      <div className={styles.main}>
+        {<CourseInfo {...courseInfos[index]} />}
+      </div>
     </div>
   );
 }

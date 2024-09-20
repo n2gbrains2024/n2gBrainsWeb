@@ -2,6 +2,7 @@ import image from "../../assets/frontendImage.png";
 
 const courseInfos = [
   {
+    path: "front-end",
     name: "Front-End ծրագրավորում",
     image: image,
     title: "Front-End դասընթաց",
@@ -29,6 +30,7 @@ const courseInfos = [
 `,
   },
   {
+    path: "fullstack",
     name: "Fullstack ծրագրավորում",
     image: image,
     title: "Fullstack ծրագրավորում",
@@ -56,6 +58,7 @@ const courseInfos = [
 `,
   },
   {
+    path: "python",
     name: "Python ծրագրավորում",
     image: image,
     title: "Python ծրագրավորում",
@@ -83,6 +86,7 @@ const courseInfos = [
 `,
   },
   {
+    path: "uiux",
     name: "Ui/Ux դիզայն",
     image: image,
     title: "Ui/Ux դիզայն",
@@ -110,6 +114,7 @@ const courseInfos = [
 `,
   },
   {
+    path: "graphic-design",
     name: "Գրաֆիկ դիզայն",
     image: image,
     title: "Գրաֆիկ դիզայն",
@@ -137,6 +142,7 @@ const courseInfos = [
 `,
   },
   {
+    path: "smm",
     name: "SMM",
     image: image,
     title: "SMM դասընթաց",

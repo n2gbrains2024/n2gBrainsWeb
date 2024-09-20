@@ -44,7 +44,35 @@ const routes = [
   },
   {
     path: "/courses",
-    element: <Courses />,
+    element: <Courses index={0} />,
+  },
+  {
+    path: "/courses/front-end",
+    element: <Courses index={0} />,
+  },
+  {
+    path: "/courses/front-end2",
+    element: <Courses index={0} />,
+  },
+  {
+    path: "/courses/fullstack",
+    element: <Courses index={1} />,
+  },
+  {
+    path: "/courses/python",
+    element: <Courses index={2} />,
+  },
+  {
+    path: "/courses/uiux",
+    element: <Courses index={3} />,
+  },
+  {
+    path: "/courses/graphic-design",
+    element: <Courses index={4} />,
+  },
+  {
+    path: "/courses/smm",
+    element: <Courses index={5} />,
   },
   {
     path: "/courseRegistration",

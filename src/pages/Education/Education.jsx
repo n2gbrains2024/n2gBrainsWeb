@@ -25,6 +25,7 @@ function Education() {
   const cards = [
     {
       title: "Ui/Ux design",
+      path: "uiux",
       description:
         "Nkaragrutyuumn savljsngvljsbgla v End-to-End Knowledge: The course provides a holistic understanding of",
       width: "59%",
@@ -39,6 +40,7 @@ function Education() {
     },
     {
       title: "Front-End",
+      path: "front-end",
       description:
         "Nkaragrutyuumn savljsngvljsbgla v End-to-End Knowledge: The course provides a",
       width: "39%",
@@ -53,6 +55,7 @@ function Education() {
     },
     {
       title: "Front-End",
+      path: "front-end2",
       description:
         "Nkaragrutyuumn savljsngvljsbgla v End-to-End Knowledge: The course provides a ",
       width: "39%",
@@ -67,6 +70,7 @@ function Education() {
     },
     {
       title: "FullStack ծրագրավորումs",
+      path: "fullstack",
       description:
         "Nkaragrutyuumn savljsngvljsbgla v End-to-End Knowledge: The course provides a holistic understanding of both front-end and back-end",
       width: "59%",
@@ -85,6 +89,7 @@ function Education() {
     },
     {
       title: "Python ծրագրավորում",
+      path: "python",
       description:
         "Nkaragrutyuumn savljsngvljsbgla v End-to-End Knowledge: The course provides a holistic understanding of both front-end and back-end",
       width: "59%",
@@ -102,6 +107,7 @@ function Education() {
     },
     {
       title: "Scratch",
+      path: "scratch",
       description:
         "Nkaragrutyuumn savljsngvljsbgla v End-to-End Knowledge: The course provides a",
       width: "39%",
@@ -114,6 +120,7 @@ function Education() {
     },
     {
       title: "SMM դասընթաց",
+      path: "smm",
       description:
         "Nkaragrutyuumn savljsngvljsbgla v End-to-End Knowledge: The course provides a holistic understanding of",
       width: "59%",
@@ -153,9 +160,10 @@ function Education() {
                 <CourseCard
                   title={card.title}
                   description={card.description}
-                  key={i}
                   width={card.width}
                   className={card.className}
+                  index={i}
+                  path={card.path}
                 >
                   {card.children}
                 </CourseCard>
