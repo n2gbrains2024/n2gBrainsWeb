@@ -1,6 +1,5 @@
 import { Link } from "react-router-dom";
-import style from "./Footer.module.css";
-import n2g from "../../assets/n2g.svg";
+import style from "./styles.module.css";
 import mailIcon from "../../assets/mailIcon.svg";
 import mapSvg from "../../assets/map.svg";
 import phone from "../../assets/phoneIcon.svg";
