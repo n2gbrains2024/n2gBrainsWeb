@@ -1,0 +1,12 @@
+.container {
+  width: 100%;
+}
+.slider {
+  width: 120%;
+  height: 50vh;
+  position: relative;
+  left: -10%;
+}
+.item {
+  height: 50vh;
+}
