@@ -1,0 +1,11 @@
+.dates {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 150px;
+}
+@media screen and (max-width: 1600px) {
+  .dates {
+    margin-top: 80px;
+  }
+}

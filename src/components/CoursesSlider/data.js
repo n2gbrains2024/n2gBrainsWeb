@@ -5,7 +5,7 @@ const sliderCards = [
   {
     title: "FullStack ծրագրավորում",
     description: `Սովորի՛ր պահանջված մասնագիտություն ընդհամենը 9 ամսում`,
-    path: "../course/fullstack",
+    path: "/course/fullstack",
     mode: "Օնլայն",
     date: "Բաց դաս՝ Սեպտեմբերի 29",
     image: fullstackPng,
@@ -13,7 +13,7 @@ const sliderCards = [
   {
     title: "UI/Ux դիզայն",
     description: `Սովորի՛ր պահանջված մասնագիտություն ընդհամենը 9 ամսում`,
-    path: "../course/uiux",
+    path: "/course/uiux",
     mode: "Օնլայն",
     date: "Բաց դաս՝ Սեպտեմբերի 29",
     image: uiUxPng,
@@ -21,7 +21,7 @@ const sliderCards = [
   {
     title: "FullStack ծրագրավորում",
     description: `Սովորի՛ր պահանջված մասնագիտություն ընդհամենը 9 ամսում`,
-    path: "../course/fullstack",
+    path: "/course/fullstack",
     mode: "Օնլայն",
     date: "Բաց դաս՝ Սեպտեմբերի 29",
     image: fullstackPng,
@@ -29,7 +29,7 @@ const sliderCards = [
   {
     title: "UI/Ux դիզայն",
     description: `Սովորի՛ր պահանջված մասնագիտություն ընդհամենը 9 ամսում`,
-    path: "../course/uiux",
+    path: "/course/uiux",
     mode: "Օնլայն",
     date: "Բաց դաս՝ Սեպտեմբերի 29",
     image: uiUxPng,
@@ -37,7 +37,7 @@ const sliderCards = [
   {
     title: "FullStack ծրագրավորում",
     description: `Սովորի՛ր պահանջված մասնագիտություն ընդհամենը 9 ամսում`,
-    path: "../course/fullstack",
+    path: "/course/fullstack",
     mode: "Օնլայն",
     date: "Բաց դաս՝ Սեպտեմբերի 29",
     image: fullstackPng,
@@ -45,7 +45,7 @@ const sliderCards = [
   {
     title: "UI/Ux դիզայն",
     description: `Սովորի՛ր պահանջված մասնագիտություն ընդհամենը 9 ամսում`,
-    path: "../course/uiux",
+    path: "/course/uiux",
     mode: "Օնլայն",
     date: "Բաց դաս՝ Սեպտեմբերի 29",
     image: uiUxPng,
@@ -53,7 +53,7 @@ const sliderCards = [
   {
     title: "FullStack ծրագրավորում",
     description: `Սովորի՛ր պահանջված մասնագիտություն ընդհամենը 9 ամսում`,
-    path: "../course/fullstack",
+    path: "/course/fullstack",
     mode: "Օնլայն",
     date: "Բաց դաս՝ Սեպտեմբերի 29",
     image: fullstackPng,
@@ -61,7 +61,7 @@ const sliderCards = [
   {
     title: "UI/Ux դիզայն",
     description: `Սովորի՛ր պահանջված մասնագիտություն ընդհամենը 9 ամսում`,
-    path: "../course/uiux",
+    path: "/course/uiux",
     mode: "Օնլայն",
     date: "Բաց դաս՝ Սեպտեմբերի 29",
     image: uiUxPng,

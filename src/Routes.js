@@ -81,7 +81,7 @@ const routes = [
   },
   {
     path: "/course/front-end",
-    element: <Course />,
+    element: <Course page={"frontEnd"} />,
   },
 ];
 
