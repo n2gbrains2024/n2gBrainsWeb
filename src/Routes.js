@@ -8,6 +8,7 @@ import WebDeveloping from "./pages/WebDeveloping/WebDeveloping.jsx";
 import Smm from "./pages/Smm/Smm.jsx";
 import Courses from "./pages/Courses/Courses.jsx";
 import CourseRegistration from "./ui/CourseRegistration/CourseRegistration.jsx";
+import Course from "./pages/Course/Course.jsx";
 
 const routes = [
   {
@@ -77,6 +78,10 @@ const routes = [
   {
     path: "/courseRegistration",
     element: <CourseRegistration />,
+  },
+  {
+    path: "/course/front-end",
+    element: <Course />,
   },
 ];
 
