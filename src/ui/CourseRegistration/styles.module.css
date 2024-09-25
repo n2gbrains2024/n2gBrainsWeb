@@ -66,6 +66,8 @@
   font-weight: 400;
   line-height: 34px;
   padding-left: 4%;
+  border: 1px solid black;
+  outline: none;
 }
 
 .register input::placeholder {
@@ -97,6 +99,10 @@
 }
 
 @media screen and (max-width: 1600px) {
+  .container {
+    /* height: 440px; */
+  }
+
   .container h2 {
     font-size: 44px;
   }
@@ -112,7 +118,7 @@
 
 @media screen and (max-width: 1367px) {
   .container {
-    height: 500px;
+    height: 470px;
   }
   .register {
     width: 65%;
@@ -146,6 +152,9 @@
     gap: 30px;
   }
 
+  .checkBoxTextContainer {
+    gap: 5px;
+  }
   .checkBoxTextContainer p {
     font-size: 20px;
   }
@@ -153,10 +162,11 @@
 
 @media screen and (max-width: 1020px) {
   .container {
+    /* height: 400px; */
     height: 40vh;
   }
   .container h2 {
-    font-size: 34px;
+    font-size: 32px;
   }
   .container p {
     font-size: 27px;
@@ -175,6 +185,7 @@
   .register input {
     font-size: 14px;
   }
+
   .checkBoxTextContainer p {
     font-size: 19px;
   }
