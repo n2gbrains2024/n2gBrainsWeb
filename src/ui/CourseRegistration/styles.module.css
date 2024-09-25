@@ -1,7 +1,6 @@
 .container {
   width: 70.6%;
   height: 574px;
-  /* height: 53vh; */
   margin-top: 200px;
   margin-left: 15%;
   border: 1px solid #000000;
@@ -30,9 +29,6 @@
   line-height: 34px;
   color: #0319e3;
   text-align: center;
-}
-
-.register {
 }
 
 .register {
@@ -70,6 +66,8 @@
   font-weight: 400;
   line-height: 34px;
   padding-left: 4%;
+  border: 1px solid black;
+  outline: none;
 }
 
 .register input::placeholder {
@@ -104,9 +102,8 @@
 
 @media screen and (max-width: 1600px) {
   .container {
-    /* height: 440px; */
+    height: 450px;
   }
-
   .container h2 {
     font-size: 44px;
   }
@@ -122,7 +119,7 @@
 
 @media screen and (max-width: 1367px) {
   .container {
-    height: 500px;
+    height: 470px;
   }
   .register {
     width: 65%;
@@ -156,18 +153,17 @@
     gap: 30px;
   }
 
+  .checkBoxTextContainer {
+    gap: 5px;
+  }
   .checkBoxTextContainer p {
     font-size: 20px;
   }
 }
 
 @media screen and (max-width: 1020px) {
-  .container {
-    /* height: 400px; */
-    height: 40vh;
-  }
   .container h2 {
-    font-size: 34px;
+    font-size: 32px;
   }
   .container p {
     font-size: 27px;
@@ -186,6 +182,7 @@
   .register input {
     font-size: 14px;
   }
+
   .checkBoxTextContainer p {
     font-size: 19px;
   }
