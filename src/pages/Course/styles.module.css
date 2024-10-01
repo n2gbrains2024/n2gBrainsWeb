@@ -7,6 +7,9 @@
 .learningContainer {
   margin-top: 200px;
 }
+.registerInfoCard {
+  margin-top: 200px;
+}
 @media screen and (max-width: 1600px) {
   .dates {
     margin-top: 80px;

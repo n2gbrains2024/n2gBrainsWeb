@@ -12,7 +12,7 @@ function Course({ page }) {
   return (
     <div className={styles.container}>
       <CourseInfoCard
-        title={data[page].title}
+        titles={[data[page].title]}
         date={data[page].date}
         background={data[page].background}
       />
@@ -38,6 +38,14 @@ function Course({ page }) {
           description={data[page].learningDescription}
           topics={data[page].learningTopics}
           advantages={data[page].learningAdvantages}
+        />
+      </div>
+      <div>{/* SARGIS */}</div>
+      <div className={styles.registerInfoCard}>
+        <CourseInfoCard
+          titles={["Դասընթացի արժեքն ամսական", data[page].price]}
+          date={data[page].date}
+          background={data[page].background2}
         />
       </div>
     </div>

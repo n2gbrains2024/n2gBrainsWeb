@@ -1,4 +1,5 @@
 import backgroundPng from "../../assets/background.png";
+import backgroundPng2 from "../../assets/background2.png";
 
 const data = {
   frontEnd: {
@@ -8,6 +9,8 @@ const data = {
     lastsMonths: ["6 ամիս", "72 դաս"],
     lastsDays: "3 օր",
     lastsHours: "1․5-2 ժամ",
+    background2: backgroundPng2,
+    price: "40․000դր",
     learningDescription: `Ծրագրավորումն ունի տարբեր ճյուղեր, որոնցից յուրաքանչյուրը նախատեսված է կոնկրետ գործողությունների համար։ Օրինակ՝ խաղերի ծրագրավորում, հեռախոսների և պլանշետների համար նախատեսված ծրագրերի ստեղծում, Web ծրագրավորում և այլն։ Դասընթացի ընթացքում կուսումնասիրեք Web ծրագրավորման ճյուղերից ՝ Front-End-ը (հարթակի Web ծրագրավորում):  Front-End ծրագրավորողը ստեղծում է կայքերի վիզուալ տեսքը այսինքն այն ամենը, ինչ օգտատերն այցելելով կայք՝ տեսնում է իր էկրանին։`,
     learningTopics: [
       {
