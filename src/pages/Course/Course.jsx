@@ -6,6 +6,7 @@ import calendar2 from "../../assets/calendar2.svg";
 import calendar3 from "../../assets/calendar3.svg";
 import styles from "./styles.module.css";
 import Date from "../../components/Date/Date.jsx";
+import LearningPlan from "../../ui/LearningPlan/LearningPlan.jsx";
 
 function Course({ page }) {
   return (
@@ -30,6 +31,13 @@ function Course({ page }) {
           svg={calendar3}
           title={data[page].lastsHours}
           description="դասաժամ"
+        />
+      </div>
+      <div className={styles.learningContainer}>
+        <LearningPlan
+          description={data[page].learningDescription}
+          topics={data[page].learningTopics}
+          advantages={data[page].learningAdvantages}
         />
       </div>
     </div>
