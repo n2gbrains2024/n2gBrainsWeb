@@ -10,6 +10,13 @@
 .registerInfoCard {
   margin-top: 200px;
 }
+
+.LearningOutcome {
+  margin-top: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 @media screen and (max-width: 1600px) {
   .dates {
     margin-top: 80px;
