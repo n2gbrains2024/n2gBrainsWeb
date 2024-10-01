@@ -41,7 +41,7 @@ function Course({ page }) {
           advantages={data[page].learningAdvantages}
         />
       </div>
-      <div className={styles.LearningOutcome}>
+      <div className={styles.learningOutcome}>
         <LearningOutcome description="Սովորելու արդյունքում"></LearningOutcome>
       </div>
       <div className={styles.registerInfoCard}>
