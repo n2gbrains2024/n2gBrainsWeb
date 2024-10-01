@@ -7,6 +7,7 @@ import calendar3 from "../../assets/calendar3.svg";
 import styles from "./styles.module.css";
 import Date from "../../components/Date/Date.jsx";
 import LearningPlan from "../../ui/LearningPlan/LearningPlan.jsx";
+import LearningOutcome from "../../ui/LearningOutcome/LearningOutcome.jsx";
 
 function Course({ page }) {
   return (
@@ -40,7 +41,9 @@ function Course({ page }) {
           advantages={data[page].learningAdvantages}
         />
       </div>
-      <div>{/* SARGIS */}</div>
+      <div className={styles.learningOutcome}>
+        <LearningOutcome description="Սովորելու արդյունքում"></LearningOutcome>
+      </div>
       <div className={styles.registerInfoCard}>
         <CourseInfoCard
           titles={["Դասընթացի արժեքն ամսական", data[page].price]}

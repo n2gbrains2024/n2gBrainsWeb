@@ -1,0 +1,38 @@
+.container {
+  width: 49%;
+  border: #666666 solid 1px;
+  border-radius: 15px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.container p {
+  width: 70%;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 31px;
+}
+
+.container img {
+  width: 65px;
+}
+
+@media screen and (max-width: 1720px) {
+  .container p {
+    font-size: 14px;
+    line-height: 22px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .container p {
+    font-size: 12px;
+    line-height: 18px;
+  }
+  .container img{
+    width: 50px;
+  }
+}
