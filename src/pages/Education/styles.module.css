@@ -89,13 +89,13 @@
   gap: 10px;
 }
 
-.subtitle {
+/* .subtitle {
   font-size: 64px;
   text-align: center;
   font-weight: 700;
   line-height: 74px;
   color: #f6f6f6;
-}
+} */
 .textContainer > p {
   color: #6d6d6d;
   font-weight: 400;
@@ -108,11 +108,11 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 20px;
+  gap: 40px;
   margin-top: 200px;
   margin-bottom: 200px;
 }
-.coursesContainer > button {
+/* .coursesContainer > button {
   width: 216px;
   height: 42px;
   border-radius: 20px;
@@ -120,7 +120,7 @@
   color: #898989;
   background: transparent;
   font-size: 18px;
-}
+} */
 .coursesContainer > p {
   width: 70%;
   font-size: 18px;

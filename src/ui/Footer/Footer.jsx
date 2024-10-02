@@ -7,9 +7,9 @@ import instagram from "../../assets/instagram.svg";
 import facebook from "../../assets/facebook.svg";
 import linkedin from "../../assets/linkedin.svg";
 
-function Footer() {
+function Footer({ background }) {
   return (
-    <div className={style.container}>
+    <div className={style.container} style={{ background }}>
       <div className={style.information}>
         <h2>Տեղեկություն</h2>
         <Link to="">Դասընթացներ</Link>
@@ -20,10 +20,10 @@ function Footer() {
       <div className={style.contacts}>
         <h2>Կոնտակտներ</h2>
         <a href="tel:+37496691949" target="_blank">
-          <img src={phone} /> (096) 694919
+          <img src={phone} alt="" /> (096) 694919
         </a>
         <a href="mailto:n2gbrains@gmail.com" target="_blank">
-          <img src={mailIcon} /> n2gbrains@gmail.com
+          <img src={mailIcon} alt="" /> n2gbrains@gmail.com
         </a>
         <a href="https://maps.app.goo.gl/9sXkCXESax4VMMf97" target="_blank">
           <img className={style.cartaSvg} src={mapSvg} alt="" />

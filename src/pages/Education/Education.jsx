@@ -5,6 +5,7 @@ import styles from "./styles.module.css";
 import teamPng from "../../assets/team.png";
 import CourseCard from "../../components/CourseCard/CourseCard";
 import CoursesSlider from "../../components/CoursesSlider/CoursesSlider.jsx";
+import Subtitle from "../../components/Subtitle/Subtitle.jsx";
 
 function Education() {
   return (
@@ -42,8 +43,10 @@ function Education() {
         </div>
       </div>
       <div className={styles.coursesContainer}>
-        <button>Դասընթացներ</button>
-        <h1 className={styles.subtitle}>Առաջիկա մեկնարկվող դասընթացներ</h1>
+        {/* <button>Դասընթացներ</button> */}
+        <Subtitle color="#F6F6F6" textAlign="center">
+          Առաջիկա մեկնարկվող դասընթացներ
+        </Subtitle>
         <p>
           Պատրա՞ստ եք բարձրացնել ձեր հմտությունները և նոր ճանապարհ սկսել
           տեխնոլոգիական ոլորտում: Բաց մի՛ թողեք մեր դասընթացները, որոնք
@@ -54,7 +57,7 @@ function Education() {
           <CoursesSlider />
         </div>
       </div>
-      <Footer />
+      <Footer background="#00000040" />
     </div>
   );
 }
