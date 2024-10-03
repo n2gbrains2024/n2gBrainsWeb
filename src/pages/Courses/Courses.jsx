@@ -1,21 +1,24 @@
 import { Link } from "react-router-dom";
 
-import CourseInfo from "../../ui/CourseInfo/CourseInfo";
-import courseInfos from "./data.js";
+import LearningPlan from "../../ui/LearningPlan/LearningPlan.jsx";
+
+import coursePaths from "./data.js";
+import data from "../../pages/Course/data.js";
 
 import iconRight from "../../assets/iconRight.svg";
+import imagePng from "../../assets/frontendImage.png";
 import styles from "./styles.module.css";
 
-function Courses({ index }) {
+function Courses({ page }) {
   return (
     <div className={styles.container}>
       <div className={styles.nav}>
         <h1>Բոլոր դասընթացները</h1>
         <div className={styles.paths}>
-          {courseInfos.map((courseInfo, i) => {
+          {coursePaths.map((coursePath, i) => {
             return (
-              <Link key={i} to={`../courses/${courseInfo.path}`}>
-                {courseInfo.name}
+              <Link key={i} to={`../courses/${coursePath.path}`}>
+                {coursePath.name}
                 <img src={iconRight} alt="" />
               </Link>
             );
@@ -23,7 +26,17 @@ function Courses({ index }) {
         </div>
       </div>
       <div className={styles.main}>
-        {<CourseInfo {...courseInfos[index]} />}
+        <div>
+          <div
+            className={styles.image}
+            style={{ backgroundImage: `url(${imagePng})` }}
+          ></div>
+          <LearningPlan
+            description={data[page].learningDescription}
+            topics={data[page].learningTopics}
+            advantages={data[page].learningAdvantages}
+          />
+        </div>
       </div>
     </div>
   );

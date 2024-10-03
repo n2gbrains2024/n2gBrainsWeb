@@ -5,6 +5,8 @@
   margin-top: 150px;
 }
 .learningContainer {
+  width: 70%;
+  margin: auto;
   margin-top: 200px;
 }
 .registerInfoCard {
@@ -42,5 +44,13 @@
 @media screen and (max-width: 1600px) {
   .dates {
     margin-top: 80px;
+  }
+  .learningContainer {
+    width: 80%;
+  }
+}
+@media screen and (max-width: 1400px) {
+  .learningContainer {
+    width: 90%;
   }
 }

@@ -1,6 +1,5 @@
 .container {
-  width: 70%;
-  margin: auto;
+  width: 100%;
   padding: 80px 115px 80px 115px;
   border: 1px solid #000;
   border-radius: 20px;
@@ -21,14 +20,10 @@
 }
 @media screen and (max-width: 1580px) {
   .container {
-    width: 80%;
     padding: 60px 90px 60px 90px;
   }
 }
 @media screen and (max-width: 1400px) {
-  .container {
-    width: 90%;
-  }
   .title {
     font-size: 26px;
     line-height: 30px;
