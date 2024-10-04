@@ -1,9 +1,14 @@
 import { useEffect } from "react";
-export default function ScrollRestoration() {
-  window.scrollTo(0, 0);
+import { useLocation } from "react-router-dom";
+
+const ScrollRestoration = () => {
+  const { pathname } = useLocation();
+
   useEffect(() => {
     window.scrollTo(0, 0);
-  }, []);
+  }, [pathname]);
 
   return null;
-}
+};
+
+export default ScrollRestoration;

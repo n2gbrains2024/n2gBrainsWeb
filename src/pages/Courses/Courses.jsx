@@ -1,6 +1,8 @@
 import { Link } from "react-router-dom";
-
 import LearningPlan from "../../ui/LearningPlan/LearningPlan.jsx";
+import CoursesSlider from "../../components/CoursesSlider/CoursesSlider.jsx";
+import Subtitle from "../../components/Subtitle/Subtitle.jsx";
+import Footer from "../../ui/Footer/Footer.jsx";
 
 import coursePaths from "./data.js";
 import data from "../../pages/Course/data.js";
@@ -37,6 +39,19 @@ function Courses({ page }) {
             advantages={data[page].learningAdvantages}
           />
         </div>
+      </div>
+      <div className={styles.sliderContainer}>
+        <Subtitle textAlign="center">Առաջիկա մեկնարկվող դասընթացներ</Subtitle>
+        <p>
+          Պատրա՞ստ եք բարձրացնել ձեր հմտությունները և նոր ճանապարհ սկսել
+          տեխնոլոգիական ոլորտում: Բաց մի՛ թողեք մեր դասընթացները, որոնք
+          նախատեսված են օգնելու Ձեզ՝ հաջողության հասնել այսօրվա արագ փոփոխվող
+          թվային աշխարհում:
+        </p>
+        <CoursesSlider />
+      </div>
+      <div className={styles.footer}>
+        <Footer background="#000" />
       </div>
     </div>
   );
