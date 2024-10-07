@@ -4,7 +4,8 @@
 .nav {
   width: 25%;
   height: 100vh;
-  position: fixed;
+  position: sticky;
+  top: 150px;
   display: flex;
   flex-direction: column;
   align-items: end;
@@ -26,19 +27,34 @@
   padding: 10px 0px 10px 0px;
   font-size: 22px;
   font-weight: 400;
+  position: relative;
   color: #a4a4a4;
   display: flex;
   justify-content: space-between;
   cursor: pointer;
 }
+.paths > a:after {
+  content: "";
+  position: absolute;
+  background: #000;
+  bottom: 0;
+  height: 1px;
+  width: 0%;
+  transition: 500ms;
+}
 .paths > a:hover {
   width: calc(100% + 10px);
-  border-bottom: solid 1px #acacac;
   color: #373737;
+}
+
+.paths > a:hover::after {
+  width: 100%;
+  background: #acacac;
 }
 .main {
   width: 75%;
   margin-left: 25%;
+  margin-top: -100vh;
 }
 .main > div {
   padding-top: 80px;
@@ -55,6 +71,10 @@
   border-radius: 30px;
   background-size: cover;
   background-position-x: center;
+  transition: background-size 1s ease;
+}
+.image:hover {
+    background-size: 120%; /* Scale the image when hovered */
 }
 .sliderContainer {
   margin-top: 150px;
