@@ -412,3 +412,24 @@
     font-size: 12px;
   }
 }
+
+@media screen and (max-width: 480px) {
+  .container {
+    width: 100% !important;
+    height: 310px;
+  }
+  .textCont h2 {
+    font-size: 24px;
+  }
+  .textCont p {
+    font-size: 12px;
+    line-height: 18px;
+  }
+  .textCont a {
+    font-size: 16px;
+  }
+
+  .scratchImg {
+    width: 70%;
+  }
+}
