@@ -150,6 +150,9 @@
   }
 }
 @media screen and (max-width: 870px) {
+  .container {
+    padding-bottom: 300px;
+  }
   .textContainer > p {
     font-size: 18px;
     line-height: 23px;
@@ -173,6 +176,8 @@
     display: none;
   }
   .infoContainer {
-    margin-top: 40px;
+    margin-top: 0px;
+    padding-top: 70px;
   }
+ 
 }
