@@ -54,3 +54,21 @@
     width: 90%;
   }
 }
+
+@media screen and (max-width: 480px) {
+  .dates {
+    width: 60%;
+    margin: auto;
+    margin-top: 20px;
+    gap: 70px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    flex-direction: column;
+  }
+  .learningOutcome {
+    margin-top: 100px;
+  }
+  .learningContainer {
+    margin-top: 50px;
+  }
+}

@@ -45,3 +45,33 @@
     font-size: 16px;
   }
 }
+
+@media screen and (max-width: 768px) {
+  .container > img {
+    width: 50px;
+  }
+  .container h2 {
+    line-height: 15px;
+    font-size: 20px;
+  }
+  .container p {
+    font-size: 16px;
+    line-height: 10px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .container > img {
+    width: 71px;
+  }
+  .container h2 {
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 24px;
+  }
+  .container p {
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 24px;
+  }
+}
