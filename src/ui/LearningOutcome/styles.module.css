@@ -31,21 +31,11 @@
   }
 }
 
-@media screen and (max-width: 768px) {
-  .container h1 {
-    font-size: 30px;
-  }
-}
-
 @media screen and (max-width: 480px) {
   .container {
     align-items: center;
   }
-  .container h1 {
-    font-size: 24px;
-    font-weight: 700;
-    line-height: 30px;
-  }
+
   .check {
     gap: 20px;
     align-items: center;

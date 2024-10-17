@@ -156,8 +156,10 @@
   .container {
     flex-direction: column;
     align-items: start;
-    margin-left: 10%;
     gap: 50px;
+    height: 571px;
+    padding-top: 50px;
+    padding-left: 80px;
   }
   .information h2,
   .contacts h2,
@@ -173,9 +175,12 @@
     font-weight: 400;
     line-height: 24px;
   }
+  .socInfo {
+    width: 250px;
+  }
 
   .socialContactsContainer {
-    width: 100%;
+    width: 60%;
   }
 
   .socialContactsContainer a > img {
@@ -189,5 +194,12 @@
   .socialContactsContainer .linkedin {
     width: 40px;
     height: 35px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .container {
+    padding-top: 40px;
+    padding-left: 30px;
   }
 }
