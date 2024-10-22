@@ -74,7 +74,7 @@
   transition: background-size 1s ease;
 }
 .image:hover {
-    background-size: 120%; /* Scale the image when hovered */
+  background-size: 120%; /* Scale the image when hovered */
 }
 .sliderContainer {
   margin-top: 150px;
