@@ -28,6 +28,7 @@
   background: #fff;
   color: #252424;
 }
+
 .mode {
   background: #000;
   color: #bebebe;
@@ -83,5 +84,52 @@
   .container p {
     font-size: 14px;
     line-height: 20px;
+  }
+}
+
+@media screen and (max-width: 1020px) {
+  .topSide {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .date,
+  .mode {
+    padding-top: 5px;
+    padding-bottom: 20px;
+  }
+  .date {
+    width: 50%;
+  }
+  .mode {
+    width: 20%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .date {
+    width: 90%;
+  }
+
+  .mode {
+    width: 40%;
+  }
+  .container h1 {
+    font-size: 24px;
+    font-weight: 700;
+  }
+  .container p {
+    display: none;
+  }
+  .container a {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .date {
+    width: 105%;
   }
 }
