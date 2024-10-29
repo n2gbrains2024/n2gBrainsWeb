@@ -29,6 +29,8 @@ function Students() {
       tablet: {
         breakpoint: { max: 1024, min: 464 },
         items: 3,
+        autoPlay: true,
+        draggable: true,
       },
       mobile: {
         breakpoint: { max: 764, min: 0 },

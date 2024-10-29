@@ -35,3 +35,15 @@
     width: 14px;
   }
 }
+@media screen and (max-width: 560px) {
+  .dot {
+    display: none;
+  }
+  .sliderContainer {
+    width: 100%;
+    justify-content: center;
+  }
+  .image {
+    border-radius: 20px;
+  }
+}

@@ -38,3 +38,15 @@
     padding: 45px;
   }
 }
+@media screen and (max-width: 490px) {
+  .container {
+    padding: 25px;
+  }
+  .title {
+    font-size: 24px;
+    line-height: 30px;
+  }
+  .description {
+    line-height: 26px;
+  }
+}

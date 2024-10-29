@@ -12,10 +12,10 @@ const images = [
   students1,
   //   students2,
   students3,
-  students4,
   students5,
   students6,
   students7,
+  students4,
   students8,
   students9,
 ];
