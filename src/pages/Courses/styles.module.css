@@ -33,6 +33,10 @@
   justify-content: space-between;
   cursor: pointer;
 }
+.paths > .openLink {
+  width: calc(100% + 10px);
+  color: #373737;
+}
 .paths > a:after {
   content: "";
   position: absolute;
@@ -47,7 +51,8 @@
   color: #373737;
 }
 
-.paths > a:hover::after {
+.paths > a:hover::after,
+.paths > .openLink:after {
   width: 100%;
   background: #acacac;
 }
@@ -71,10 +76,6 @@
   border-radius: 30px;
   background-size: cover;
   background-position-x: center;
-  transition: background-size 1s ease;
-}
-.image:hover {
-  background-size: 120%; /* Scale the image when hovered */
 }
 .sliderContainer {
   margin-top: 150px;
@@ -95,12 +96,27 @@
 .footer {
   margin-top: 150px;
 }
+
+.studentsContainer,
+.learningOutcome,
+.mobileImage,
+.mobileNav {
+  display: none;
+}
+
 @media screen and (max-width: 1680px) {
   .nav > h1 {
     font-size: 27px;
   }
   .paths > div {
     font-size: 19px;
+  }
+  .main {
+    width: 80%;
+    margin-left: 20%;
+  }
+  .main > div {
+    padding-right: 50px;
   }
 }
 
@@ -116,14 +132,119 @@
     font-size: 16px;
   }
 }
+
 @media screen and (max-width: 1300px) {
-  .container {
-    padding-left: 80px;
-    padding-right: 80px;
+  .nav > h1 {
+    width: 90%;
+    font-size: 24px;
+  }
+  .paths {
+    width: 90%;
+  }
+  .paths > div {
+    font-size: 164px;
+  }
+  .nav {
+    width: 30%;
+  }
+  .main {
+    width: 70%;
+    margin-left: 30%;
+  }
+  .main > div {
+    padding-right: 40px;
+    padding-left: 40px;
   }
 }
-@media screen and (max-width: 1080px) {
+@media screen and (max-width: 1180px) {
+  .image,
+  .nav {
+    display: none;
+  }
   .container {
+    padding-top: 100px;
+  }
+  .main {
+    width: 100%;
+    margin-left: 0;
+    margin-top: 0;
+  }
+  .main > div {
+    padding: 0;
+  }
+
+  .mobileNav,
+  .studentsContainer {
+    display: block;
+  }
+
+  .mobileSelectedPage {
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    cursor: pointer;
+  }
+  .mobileSelectedPage > h1 {
+    font-size: 30px;
+    font-weight: 700;
+  }
+  .mobileSelectedPage > img {
+    width: 30px;
+  }
+  .mobilePaths {
+    display: flex;
+    justify-content: center;
+    background: #000;
+    padding: 50px;
+  }
+  .mobilePaths > div {
+    display: flex;
+    flex-direction: column;
     gap: 20px;
+  }
+  .mobilePaths a {
+    color: white;
+    font-size: 30px;
+  }
+  .mobilePaths img {
+    display: none;
+  }
+
+  .mobileImage {
+    height: 30vh;
+    background-size: cover;
+    box-shadow: inset 50vw 0px 180px #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+  }
+  .mobileImage > h1 {
+    color: white;
+    font-size: 40px;
+  }
+  .learningPlanContainer {
+    margin-top: 100px;
+  }
+  .studentsContainer {
+    margin-top: 100px;
+  }
+  .learningOutcome {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+  }
+  .learningOutcome h1 {
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 1070px) {
+  .container {
+    padding-top: 70px;
   }
 }

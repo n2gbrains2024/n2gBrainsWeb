@@ -3,6 +3,7 @@ import backgroundPng2 from "../../assets/background2.png";
 
 const data = {
   frontEnd: {
+    path: "front-end",
     title: "Front-End ծրագրավորում 0-ից",
     date: "Բաց դաս՝ դեկտեմբերի 3 (19:30)",
     background: backgroundPng,

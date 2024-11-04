@@ -49,15 +49,15 @@ const routes = [
   },
   {
     path: "/courses/front-end",
-    element: <Courses page="frontEnd"  />,
+    element: <Courses page="frontEnd" />,
   },
   {
     path: "/courses/front-end2",
-    element: <Courses page="frontEnd"  />,
+    element: <Courses page="frontEnd" />,
   },
   {
     path: "/courses/fullstack",
-    element: <Courses page="frontEnd"  />,
+    element: <Courses page="frontEnd" />,
   },
   {
     path: "/courses/python",
@@ -69,11 +69,11 @@ const routes = [
   },
   {
     path: "/courses/graphic-design",
-    element: <Courses page="frontEnd"  />,
+    element: <Courses page="frontEnd" />,
   },
   {
     path: "/courses/smm",
-    element: <Courses page="frontEnd"  />,
+    element: <Courses page="frontEnd" />,
   },
   {
     path: "/courseRegistration",
