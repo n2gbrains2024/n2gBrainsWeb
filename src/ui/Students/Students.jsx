@@ -53,8 +53,10 @@ function Students() {
           <img src={leftSvg} alt="" />
         </div>
         <Carousel {...settings} ref={sliderRef}>
-          {images.map((image) => {
-            return <img src={image} alt="" className={styles.image} />;
+          {images.map((image, index) => {
+            return (
+              <img src={image} alt="" className={styles.image} key={index} />
+            );
           })}
         </Carousel>
         <div className={styles.dot} onClick={scrollRight}>

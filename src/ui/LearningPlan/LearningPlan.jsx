@@ -2,6 +2,17 @@ import TopicItem from "../../components/TopicItem/TopicItem";
 import Ul from "../../components/Ul/Ul";
 import styles from "./styles.module.css";
 function LearningPlan({ description, topics, advantages }) {
+  const topicsItems = topics.map((topic, index) => {
+    return (
+      <TopicItem
+        title={topic.title}
+        descriptions={topic.descriptions}
+        uls={topic.uls}
+        defaultOpen={topic.open}
+        key={index}
+      />
+    );
+  });
   return (
     <div className={styles.container}>
       <div>
@@ -9,16 +20,7 @@ function LearningPlan({ description, topics, advantages }) {
         <p className={styles.description}>{description}</p>
       </div>
       <h1 className={styles.title}>Թեմաներ</h1>
-      {topics.map((topic) => {
-        return (
-          <TopicItem
-            title={topic.title}
-            descriptions={topic.descriptions}
-            uls={topic.uls}
-            defaultOpen={topic.open}
-          />
-        );
-      })}
+      {topicsItems}
       <h1 className={styles.title}>Առավելություններ</h1>
       <Ul list={advantages} />
     </div>

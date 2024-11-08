@@ -23,14 +23,18 @@ function TopicItem({ title, descriptions, uls, defaultOpen }) {
       {open ? (
         <div className={styles.dropdown}>
           <div>
-            {descriptions.map((description) => {
-              return <p className={styles.description}>{description}</p>;
+            {descriptions.map((description, index) => {
+              return (
+                <p className={styles.description} key={index}>
+                  {description}
+                </p>
+              );
             })}
           </div>
           <div>
-            {uls.map((ul) => {
+            {uls.map((ul, index) => {
               return (
-                <div className={styles.list}>
+                <div className={styles.list} key={index}>
                   <h1>{ul.title}</h1>
                   <div className={styles.ul}>
                     <Ul list={ul.list} />

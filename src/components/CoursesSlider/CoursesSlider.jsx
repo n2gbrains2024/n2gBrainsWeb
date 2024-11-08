@@ -36,13 +36,14 @@ function CoursesSlider() {
       },
     },
   };
+
+  const sliderCardComponents = sliderCards.map((sliderCard, index) => {
+    return <CoursesSliderCard {...sliderCard} key={index} />;
+  });
+
   return (
     <div className={styles.container}>
-      <Carousel {...settings}>
-        {sliderCards.map((sliderCard, i) => {
-          return <CoursesSliderCard {...sliderCard} index={i} />;
-        })}
-      </Carousel>
+      <Carousel {...settings}>{sliderCardComponents}</Carousel>
     </div>
   );
 }

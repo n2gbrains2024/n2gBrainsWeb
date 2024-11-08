@@ -25,9 +25,9 @@ function ServiceDropdownCard({ onClick }) {
   ];
   return (
     <div className={styles.container}>
-      {pages.map((page, i) => {
+      {pages.map((page, index) => {
         return (
-          <Link key={i} to={page.to} onClick={onClick}>
+          <Link key={index} to={page.to} onClick={onClick}>
             <div>
               <img src={page.image} alt="" />
             </div>

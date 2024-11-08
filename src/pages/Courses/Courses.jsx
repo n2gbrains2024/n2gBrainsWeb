@@ -37,7 +37,11 @@ function Courses({ page }) {
       <div className={styles.mobileNav}>
         <div className={styles.mobileSelectedPage} onClick={triggerDropdown}>
           <h1>{data[page].title}</h1>
-          <img src={blackArrow} alt="" />
+          <img
+            src={blackArrow}
+            alt=""
+            className={isOpenDropdown ? styles.open : ""}
+          />
         </div>
         {isOpenDropdown ? (
           <div className={styles.mobilePaths}>
